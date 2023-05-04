@@ -1,0 +1,609 @@
+IN yyparse-------------------------
+l0
+0x55bac4ec8740
+Location:l0
+# of variables3
+ [ no initial condition set]
+ Invariant: [[ 
+
+True
+
+]]
+
+Location:l0
+# of variables3
+ [ no initial condition set]
+ Invariant: [[ 
+
+True
+
+]]
+
+line 1479
+B = 0
+
+line 1463
+
+C = 0
+
+B = 0
+
+C = 0, B = 0
+
+line 1463
+
+C = 0, B = 0
+
+A = 0
+
+C = 0, B = 0, A = 0
+
+line 2281
+Location:l0
+# of variables3
+ Initial Condition: [[ 
+
+1*t   = 0 
+1*y   = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+True
+
+]]
+
+l0
+C = 0, B = 0, A = 0
+C = 0, B = 0, A = 0
+true
+---------------------------------------------------
+ Local invariants to be generated : 1
+ Increasing invariants to be generated : 1
+ Strategy ID #2
+ # of initial propagation steps:2
+ Weave Time allowed:360000
+ Cousot-Halbwachs to be performed:1
+ BHRZ03 to be performed:1
+----------------------------------------------------
+
+1.
+The locations read in are:
+
+Location:l0
+# of variables3
+ Initial Condition: [[ 
+
+1*t   = 0 
+1*y   = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+True
+
+]]
+
+Dualizing....(in location)
+
+- 1.Before remove_higher_space_dimension(nd), result(based on cs) is : 
+A - G = 0, B - F = 0, C - E = 0, D >= 0
+
+- 2.After remove_higher_space_dimension(nd), result(based on cs) is : 
+D >= 0
+----------------------------------------------
+
+2.
+The transitions read in are::
+
+Transition Relation
+Name: t0
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+-1*x +1*t +1*`x -1*`t  >= 0
+-1*y -2*t +1*`y +2*`t -3 >= 0
+-1*y +1*t +1*`y -1*`t  + 6 >= 0
+-1*t +1*`t -2 >= 0
+1*t -1*`t  + 4 >= 0
+1*y -2*t -1*`y +2*`t -3 >= 0
+1*y +1*t -1*`y -1*`t  + 6 >= 0
+1*x -2*t -1*`x +2*`t  >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+-1*x +1*t +1*`x -1*`t  >= 0
+-1*y -2*t +1*`y +2*`t -3 >= 0
+-1*y +1*t +1*`y -1*`t  + 6 >= 0
+-1*t +1*`t -2 >= 0
+1*x -2*t -1*`x +2*`t  >= 0
+1*t -1*`t  + 4 >= 0
+1*y -2*t -1*`y +2*`t -3 >= 0
+1*y +1*t -1*`y -1*`t  + 6 >= 0
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Dualizing....(in transitionrelation)
+After remove_higher_space_dimensions: 
+polyd is: C - G = 0, A - E = 0, B - F = 0, 4*A - D - F + 2*G + H >= 0, 4*A - D + F + 2*G + H >= 0, 6*A - D + 3*F + 3*G + H >= 0, 8*A - D + 2*F + 4*G + H >= 0, 8*A - D - 2*F + 4*G + H >= 0, 6*A - D - 3*F + 3*G + H >= 0, 3*A - D - 3*F + 3*G + H >= 0, 2*A - D - F + 2*G + H >= 0, 2*A - D + F + 2*G + H >= 0, 3*A - D + 3*F + 3*G + H >= 0, 4*A - D + 2*F + 4*G + H >= 0, 4*A - D - 2*F + 4*G + H >= 0
+After cs=polyd.minimized_constraints: 
+cs is: C - G = 0
+cs is: A - E = 0
+cs is: B - F = 0
+cs is: 4*A - D - F + 2*G + H >= 0
+cs is: 4*A - D + F + 2*G + H >= 0
+cs is: 6*A - D + 3*F + 3*G + H >= 0
+cs is: 8*A - D + 2*F + 4*G + H >= 0
+cs is: 8*A - D - 2*F + 4*G + H >= 0
+cs is: 6*A - D - 3*F + 3*G + H >= 0
+cs is: 3*A - D - 3*F + 3*G + H >= 0
+cs is: 2*A - D - F + 2*G + H >= 0
+cs is: 2*A - D + F + 2*G + H >= 0
+cs is: 3*A - D + 3*F + 3*G + H >= 0
+cs is: 4*A - D + 2*F + 4*G + H >= 0
+cs is: 4*A - D - 2*F + 4*G + H >= 0
+----------------------------------------------
+
+3.
+
+In factorizing_strategy_equalities(): 
+
+In split_on_factor_equlities(LinTransform & lt): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In factorizing_strategy_equalities(): 
+Location::l0 pushing back clump with 1 Polyhedra
+
+In add_clump, the new clump cl is ... 
+
+clump_poly_count is 1
+D >= 0, A - B + C >= 0, A + B + C >= 0, 2*A - B + C >= 0, 2*A + B + C >= 0
+... done
+----------------------------------------------
+
+4.
+
+- In extract_invariant_and_update(C_Polyhedron & pp, & dualp) : 
+
+- For location l0
+
+- pp is D >= 0, A - B + C >= 0, A + B + C >= 0, 2*A - B + C >= 0, 2*A + B + C >= 0
+
+- pp.minimized_generators() is p(0), r(D), r(A - C), r(B + C), r(-A + 2*C), r(-B + C)
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is p(0)
+
+- g.space_dimension() is 4
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is 0
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is 0
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- i is 2
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(3) is D
+- l is 0
+- n is 3
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)>=0
+invariant is true
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(D)
+
+- g.space_dimension() is 4
+
+- Variable(3) is D
+- g.coefficient(D) is 1
+- lin is D
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is D
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is D
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is D
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- i is 2
+- c is 0
+- lin1 is 0
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(3) is D
+- l is 0
+- n is 3
+- c is 1
+- lin1 is 1
+l0=> + 1(add_to_invariant!)>=0
+invariant is true
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(A - C)
+
+- g.space_dimension() is 4
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is -1
+- lin is -C
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is -C
+
+- Variable(0) is A
+- g.coefficient(A) is 1
+- lin is A - C
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 1
+- lin1 is A
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is A
+
+- handle_integers(-1) is 1
+- lin.coefficient(Variable(l+i)) is -1
+- Variable(2) is C
+- l is 0
+- i is 2
+- c is -1
+- lin1 is A - C
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(3) is D
+- l is 0
+- n is 3
+- c is 0
+- lin1 is A - C
+l0=>1*x -1*t (add_to_invariant!)>=0
+invariant is A - C >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(B + C)
+
+- g.space_dimension() is 4
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is 1
+- lin is C
+
+- Variable(1) is B
+- g.coefficient(B) is 1
+- lin is B + C
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is B + C
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 1
+- lin1 is B
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(2) is C
+- l is 0
+- i is 2
+- c is 1
+- lin1 is B + C
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(3) is D
+- l is 0
+- n is 3
+- c is 0
+- lin1 is B + C
+l0=>1*y +1*t (add_to_invariant!)>=0
+invariant is A - C >= 0, B + C >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(-A + 2*C)
+
+- g.space_dimension() is 4
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is 2
+- lin is 2*C
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is 2*C
+
+- Variable(0) is A
+- g.coefficient(A) is -1
+- lin is -A + 2*C
+
+- handle_integers(-1) is 1
+- lin.coefficient(Variable(l+i)) is -1
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is -1
+- lin1 is -A
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is -A
+
+- handle_integers(2) is 1
+- lin.coefficient(Variable(l+i)) is 2
+- Variable(2) is C
+- l is 0
+- i is 2
+- c is 2
+- lin1 is -A + 2*C
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(3) is D
+- l is 0
+- n is 3
+- c is 0
+- lin1 is -A + 2*C
+l0=>-1*x +2*t (add_to_invariant!)>=0
+invariant is B + C >= 0, A - C >= 0, -A + 2*C >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(-B + C)
+
+- g.space_dimension() is 4
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is 1
+- lin is C
+
+- Variable(1) is B
+- g.coefficient(B) is -1
+- lin is -B + C
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is -B + C
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(-1) is 1
+- lin.coefficient(Variable(l+i)) is -1
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is -1
+- lin1 is -B
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(2) is C
+- l is 0
+- i is 2
+- c is 1
+- lin1 is -B + C
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(3) is D
+- l is 0
+- n is 3
+- c is 0
+- lin1 is -B + C
+l0=>-1*y +1*t (add_to_invariant!)>=0
+invariant is -A + 2*C >= 0, B + C >= 0, A - C >= 0, -B + C >= 0
+strategy ID 2 ending (num_context==2)
+----------------------------------------------
+
+5.
+The locations read in are:
+
+Location:l0
+# of variables3
+ Initial Condition: [[ 
+
+1*t   = 0 
+1*y   = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+-1*x +2*t  >= 0
+1*y +1*t  >= 0
+1*x -1*t  >= 0
+-1*y +1*t  >= 0
+
+]]
+----------------------------------------------
+ # of Contexts generated =2
+ # pruned by inclusion tests = 1
+ # of invariants *weav*ed=1
+ #  *bang*ed=0
+ # Pruned in Cump.cc =0
+ Time Taken (0.01S)=0
+
+
+ Doing Initial Propagation
+Propagation done -- Time Taken (0.01S):0
+---- Running Cousot-Halbwachs with H79 widening ----
+ The computed invariant map is 
+ Location:l0
+ [[ 
+-1*x +2*t  >= 0
+-1*y +1*t  >= 0
+1*y +1*t  >= 0
+1*x -1*t  >= 0
+
+]]
+
+Time spent propagating stuff: (0.01s) 0
+Time spent widening stuff: (0.01s)0
+
+
+ Time taken for Cousot-Halbwachs Widening (0.01 S)0
+ The bake-off results vs. CH79
+Location :l0  == 
+--------------------------------------------------------
+---- Running Cousot-Halbwachs with BHRZ03 widening ----
+ The computed invariant map is 
+ Location:l0
+ [[ 
+-1*x +2*t  >= 0
+-1*y +1*t  >= 0
+1*x -1*t  >= 0
+1*y +1*t  >= 0
+
+]]
+
+Time spent propagating stuff: (0.01s) 0
+Time spent widening stuff: (0.01s)0
+
+
+ Time taken for BHRZ03 (0.01 S)0
+ The bake-off results vs. BHRZ03
+Location :l0  == 
+--------------------------------------------------------
+ Time taken for the initial propagation (0.01 S)0
+ Time taken for the quantifier elimination (0.01 S)0
+ Total Time taken (0.01S) 0

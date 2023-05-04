@@ -1,0 +1,756 @@
+IN yyparse-------------------------
+l0
+0x55aa6e4b60f0
+Location:l0
+# of variables2
+ [ no initial condition set]
+ Invariant: [[ 
+
+True
+
+]]
+
+Location:l0
+# of variables2
+ [ no initial condition set]
+ Invariant: [[ 
+
+True
+
+]]
+
+line 1479
+A = 0
+
+line 1463
+
+B = 0
+
+A = 0
+
+B = 0, A = 0
+
+line 2281
+Location:l0
+# of variables2
+ Initial Condition: [[ 
+
+1*y   = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+True
+
+]]
+
+l0
+B = 0, A = 0
+B = 0, A = 0
+ [[ 
+x  ,  y  ,  ]]
+---------------------------------------------------
+ Local invariants to be generated : 1
+ Increasing invariants to be generated : 1
+ Strategy ID #2
+ # of initial propagation steps:2
+ Weave Time allowed:360000
+ Cousot-Halbwachs to be performed:1
+ BHRZ03 to be performed:1
+----------------------------------------------------
+
+1.
+The locations read in are:
+
+Location:l0
+# of variables2
+ Initial Condition: [[ 
+
+1*y   = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+True
+
+]]
+
+Dualizing....(in location)
+
+- 1.Before remove_higher_space_dimension(nd), result(based on cs) is : 
+A - E = 0, B - D = 0, C >= 0
+
+- 2.After remove_higher_space_dimension(nd), result(based on cs) is : 
+C >= 0
+----------------------------------------------
+
+2.
+The transitions read in are::
+
+Transition Relation
+Name: t1
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*y -1*`y  + 1  = 0 
+1*x -1*`x  + 2  = 0 
+-1*x  + 7 >= 0
+1*x -5 >= 0
+ ]]
+Guard [[
+-1*x  + 7 >= 0
+1*x -5 >= 0
+ ]]
+Update [[
+1*y -1*`y  + 1  = 0 
+1*x -1*`x  + 2  = 0 
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Dualizing....(in transitionrelation)
+After remove_higher_space_dimensions: 
+polyd is: B - E = 0, -5*A + B - C + 7*D + F >= 0, -7*A + B - C + 9*D + F >= 0
+After cs=polyd.minimized_constraints: 
+cs is: B - E = 0
+cs is: -5*A + B - C + 7*D + F >= 0
+cs is: -7*A + B - C + 9*D + F >= 0
+Transition Relation
+Name: t2
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*y -1*`y  + 2  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 4 >= 0
+ ]]
+Guard [[
+-1*x  + 4 >= 0
+ ]]
+Update [[
+1*y -1*`y  + 2  = 0 
+1*x -1*`x  + 1  = 0 
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Dualizing....(in transitionrelation)
+After remove_higher_space_dimensions: 
+polyd is: B - E = 0, A - D >= 0, -4*A + 2*B - C + 5*D + F >= 0
+After cs=polyd.minimized_constraints: 
+cs is: B - E = 0
+cs is: A - D >= 0
+cs is: -4*A + 2*B - C + 5*D + F >= 0
+Transition Relation
+Name: t3
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*y -1*`y  + 3  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 9 >= 0
+1*x -7 >= 0
+ ]]
+Guard [[
+-1*x  + 9 >= 0
+1*x -7 >= 0
+ ]]
+Update [[
+1*y -1*`y  + 3  = 0 
+1*x -1*`x  + 1  = 0 
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Dualizing....(in transitionrelation)
+After remove_higher_space_dimensions: 
+polyd is: B - E = 0, -7*A + 3*B - C + 8*D + F >= 0, -9*A + 3*B - C + 10*D + F >= 0
+After cs=polyd.minimized_constraints: 
+cs is: B - E = 0
+cs is: -7*A + 3*B - C + 8*D + F >= 0
+cs is: -9*A + 3*B - C + 10*D + F >= 0
+Transition Relation
+Name: t4
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*y -1*`y  + 1  = 0 
+1*x -1*`x  + 2  = 0 
+1*x -9 >= 0
+ ]]
+Guard [[
+1*x -9 >= 0
+ ]]
+Update [[
+1*y -1*`y  + 1  = 0 
+1*x -1*`x  + 2  = 0 
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Dualizing....(in transitionrelation)
+After remove_higher_space_dimensions: 
+polyd is: B - E = 0, -9*A + B - C + 11*D + F >= 0, -A + D >= 0
+After cs=polyd.minimized_constraints: 
+cs is: B - E = 0
+cs is: -9*A + B - C + 11*D + F >= 0
+cs is: -A + D >= 0
+----------------------------------------------
+
+3.
+
+In factorizing_strategy_equalities(): 
+
+In split_on_factor_equlities(LinTransform & lt): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+Expression is: ( 1*M_t2 -1 ) * ( 1*c_l0_1 ) 
+
+Expression is: ( 1*M_t3 -1 ) * ( 1*c_l0_1 ) 
+
+Expression is: ( 1*M_t4 -1 ) * ( 1*c_l0_1 ) 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+Expression is: ( 1*M_t2 -1 ) * ( 1*c_l0_1 ) 
+
+Expression is: ( 1*M_t3 -1 ) * ( 1*c_l0_1 ) 
+
+Expression is: ( 1*M_t4 -1 ) * ( 1*c_l0_1 ) 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+Expression is: ( 1*M_t2 -1 ) * ( 1*c_l0_1 ) 
+
+Expression is: ( 1*M_t3 -1 ) * ( 1*c_l0_1 ) 
+
+Expression is: ( 1*M_t4 -1 ) * ( 1*c_l0_1 ) 
+
+In move_constraints_inequalities(): 
+
+In factorizing_strategy_equalities(): 
+
+In split_on_factor_equlities(LinTransform & lt): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+Expression is: ( 1*M_t3 -1 ) * ( 1*c_l0_1 ) 
+
+Expression is: ( 1*M_t4 -1 ) * ( 1*c_l0_1 ) 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+Expression is: ( 1*M_t3 -1 ) * ( 1*c_l0_1 ) 
+
+Expression is: ( 1*M_t4 -1 ) * ( 1*c_l0_1 ) 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+Expression is: ( 1*M_t3 -1 ) * ( 1*c_l0_1 ) 
+
+Expression is: ( 1*M_t4 -1 ) * ( 1*c_l0_1 ) 
+
+In move_constraints_inequalities(): 
+
+In factorizing_strategy_equalities(): 
+
+In split_on_factor_equlities(LinTransform & lt): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+Expression is: ( 1*M_t4 -1 ) * ( 1*c_l0_1 ) 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+Expression is: ( 1*M_t4 -1 ) * ( 1*c_l0_1 ) 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+Expression is: ( 1*M_t4 -1 ) * ( 1*c_l0_1 ) 
+
+In move_constraints_inequalities(): 
+
+In factorizing_strategy_equalities(): 
+
+In split_on_factor_equlities(LinTransform & lt): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In factorizing_strategy_equalities(): 
+
+In factorizing_strategy_equalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In factorizing_strategy_equalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In factorizing_strategy_equalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In factorizing_strategy_equalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+Location::l0 pushing back clump with 1 Polyhedra
+
+In add_clump, the new clump cl is ... 
+
+clump_poly_count is 1
+C >= 0, A + 3*B >= 0, 2*A + B >= 0
+... done
+----------------------------------------------
+
+4.
+
+- In extract_invariant_and_update(C_Polyhedron & pp, & dualp) : 
+
+- For location l0
+
+- pp is C >= 0, A + 3*B >= 0, 2*A + B >= 0
+
+- pp.minimized_generators() is r(3*A - B), r(-A + 2*B), r(C), p(0)
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(3*A - B)
+
+- g.space_dimension() is 3
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is 0
+
+- Variable(1) is B
+- g.coefficient(B) is -1
+- lin is -B
+
+- Variable(0) is A
+- g.coefficient(A) is 3
+- lin is 3*A - B
+
+- handle_integers(3) is 1
+- lin.coefficient(Variable(l+i)) is 3
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 3
+- lin1 is 3*A
+
+- handle_integers(-1) is 1
+- lin.coefficient(Variable(l+i)) is -1
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is -1
+- lin1 is 3*A - B
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 3*A - B
+l0=>3*x -1*y (add_to_invariant!)>=0
+invariant is 3*A - B >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(-A + 2*B)
+
+- g.space_dimension() is 3
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is 0
+
+- Variable(1) is B
+- g.coefficient(B) is 2
+- lin is 2*B
+
+- Variable(0) is A
+- g.coefficient(A) is -1
+- lin is -A + 2*B
+
+- handle_integers(-1) is 1
+- lin.coefficient(Variable(l+i)) is -1
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is -1
+- lin1 is -A
+
+- handle_integers(2) is 1
+- lin.coefficient(Variable(l+i)) is 2
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 2
+- lin1 is -A + 2*B
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is -A + 2*B
+l0=>-1*x +2*y (add_to_invariant!)>=0
+invariant is 3*A - B >= 0, -A + 2*B >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(C)
+
+- g.space_dimension() is 3
+
+- Variable(2) is C
+- g.coefficient(C) is 1
+- lin is C
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is C
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is C
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 1
+- lin1 is 1
+l0=> + 1(add_to_invariant!)>=0
+invariant is -A + 2*B >= 0, 3*A - B >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is p(0)
+
+- g.space_dimension() is 3
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is 0
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is 0
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)>=0
+invariant is -A + 2*B >= 0, 3*A - B >= 0
+strategy ID 2 ending (num_context==2)
+----------------------------------------------
+
+5.
+The locations read in are:
+
+Location:l0
+# of variables2
+ Initial Condition: [[ 
+
+1*y   = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+-1*x +2*y  >= 0
+3*x -1*y  >= 0
+
+]]
+----------------------------------------------
+ # of Contexts generated =13
+ # pruned by inclusion tests = 8
+ # of invariants *weav*ed=1
+ #  *bang*ed=0
+ # Pruned in Cump.cc =0
+ Time Taken (0.01S)=0
+
+
+ Doing Initial Propagation
+Propagation done -- Time Taken (0.01S):0
+---- Running Cousot-Halbwachs with H79 widening ----
+ The computed invariant map is 
+ Location:l0
+ [[ 
+True
+
+]]
+
+Time spent propagating stuff: (0.01s) 0
+Time spent widening stuff: (0.01s)0
+
+
+ Time taken for Cousot-Halbwachs Widening (0.01 S)0
+ The bake-off results vs. CH79
+Location :l0  + 
+--------------------------------------------------------
+---- Running Cousot-Halbwachs with BHRZ03 widening ----
+ The computed invariant map is 
+ Location:l0
+ [[ 
+3*x +19*y  >= 0
+
+]]
+
+Time spent propagating stuff: (0.01s) 1
+Time spent widening stuff: (0.01s)0
+
+
+ Time taken for BHRZ03 (0.01 S)1
+ The bake-off results vs. BHRZ03
+Location :l0  + 
+--------------------------------------------------------
+ Time taken for the initial propagation (0.01 S)0
+ Time taken for the quantifier elimination (0.01 S)0
+ Total Time taken (0.01S) 1

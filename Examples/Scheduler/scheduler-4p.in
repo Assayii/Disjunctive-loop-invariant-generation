@@ -1,0 +1,705 @@
+variable [ c1 c2 c3 c4 x1 x2 x3 x4 k1 k2 k3 k4 t]
+propsteps(1)
+
+#Location l1 where process 1 is executed
+
+location l1
+
+c1=0
+c2>=5
+c3>=5
+c4>=5
+
+k1=1
+k2=0
+k3=0
+k4=0
+
+x1=0
+x2=0
+x3=0
+x4=0
+
+t-c2=0
+t-c3=0
+t-c4=0
+
+#Process 2 is executed in location l2
+
+location l2
+
+c1>=10
+c2=0
+c3>=10
+c4>=10
+
+k1=0
+k2=1
+k3=0
+k4=0
+
+x1=0
+x2=0
+x3=0
+x4=0
+
+t-c1=0
+t-c3=0
+t-c4=0
+
+#Process 3 in location l3
+
+Location l3
+
+c1>=20
+c2>=20
+c3=0
+c4>=20
+
+k1=0
+k2=0
+k3=1
+k4=0
+
+x1=0
+x2=0
+x3=0
+x4=0
+
+t-c1=0
+t-c2=0
+t-c4=0
+
+#Process 4 in location l4
+
+location l4
+
+c1 >= 40
+c2 >= 40
+c3 >=40
+c4=0
+
+k1=0
+k2=0
+k3=0
+k4=1
+
+x1=0
+x2=0
+x3=0
+x4=0
+
+t-c1=0
+t-c2=0
+t-c3=0
+
+
+#Time evolution in location l1
+
+transition tl1evolve: l1,
+
+         x1 -2 <=0
+	'x1-2 <=0
+
+	x2=0
+	x3=0
+	x4=0
+	
+	't-t >=0
+	
+	'c1-c1 -'t+t =0
+	'c2-c2-'t+t=0
+	'c3-c3-'t+t=0
+	'c4-c4-'t+t=0
+
+	'x1-x1-'t+t=0
+	'x2-x2=0
+	'x3-x3=0
+	'x4-x4=0
+
+	'k1-k1=0
+	'k2-k2=0
+	'k3-k3=0
+	'k4-k4=0
+
+#Time evolution in location l2
+
+transition tl2evolve: l2,
+	 x2 -4 <=0
+	 'x2-4 <=0
+
+	 x1 -2 <=0
+	 x3=0
+	 x4=0
+	 
+	 't-t >=0
+
+	'c1-c1 -'t+t =0
+	'c2-c2-'t+t=0
+	'c3-c3-'t+t=0
+	'c4-c4-'t+t=0
+
+	'x2-x2-'t+t=0
+	'x1-x1=0
+	'x3-x3=0
+	'x4-x4=0
+
+	'k1-k1=0
+	'k2-k2=0
+	'k3-k3=0
+	'k4-k4=0
+
+#Time evolution in location l3
+
+transition tl3evolve: l3,
+	 x3 -8 <=0
+	'x3-8<=0
+	   
+	x1<=2
+	x2<=4
+	x4=0
+
+	't-t>=0
+	   
+	'c1-c1-'t+t=0
+	'c2-c2-'t+t=0
+	'c3-c3-'t+t=0
+	'c4-c4-'t+t=0
+
+	'x1-x1=0
+	'x2-x2=0
+	'x3-x3-'t+t=0
+	'x4-x4=0
+
+	'k1-k1=0
+	'k2-k2=0
+	'k3-k3=0
+	'k4-k4=0
+
+#Time evolution in location l4
+
+transition tl4evolve: l4,
+	   x4-4 <=0
+	   'x4-4<=0
+	   
+	   x1 <= 2
+	   x2 <= 4
+	   x3 <= 8
+	   
+	   't-t>=0
+	   
+	      
+	'c1-c1-'t+t=0
+	'c2-c2-'t+t=0
+	'c3-c3-'t+t=0
+	'c4-c4-'t+t=0
+
+	  'x1-x1=0
+	  'x2-x2=0
+	  'x3-x3=0
+	  'x4-x4-'t+t=0
+
+	  'k1-k1=0
+	  'k2-k2=0
+	  'k3-k3=0
+	  'k4-k4=0
+
+	   
+
+#Extra process 1 arrives in location l1
+
+transition t8: l1,
+	   c1>=5
+
+	   'k1-k1-1=0
+	   'k2-k2=0	   
+	   'k3-k3=0
+	   'k4-k4=0
+	   
+
+	   'c1=0
+	   'c2-c2=0
+	   'c3-c3=0
+	   'c4-c4=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+	   'x4-x4=0
+
+	   't-t=0
+
+#Process completes execution in location l1
+
+transition t9:l1,
+	   x1=2
+	   k1 -2 >=0
+
+	   'k1-k1+1=0
+	   'k2-k2=0
+	   'k3-k3=0
+	   'k4-k4=0
+	   
+	   'x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+	   'x4-x4=0
+
+	   'c1-c1=0
+	   'c2-c2=0
+	   'c3-c3=0
+	   'c4-c4=0
+
+	   't-t=0
+
+
+#Process 1 arrives  in location l2
+
+transition t10: l2,
+
+	   c1>=5
+
+	   'k1-k1-1=0
+	   'k2-k2=0	   
+	   'k3-k3=0
+	   'k4-k4=0
+
+	   'c1=0
+	   'c2-c2=0
+	   'c3-c3=0
+	   'c4-c4=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+ 	   'x4-x4=0
+
+	   't-t=0
+
+# Process 1 arrives in location l3
+transition t13: l3,
+
+	   c1>=5
+
+	   'k1-k1-1=0
+	   'k2-k2=0	   
+	   'k3-k3=0
+	   'k4-k4=0
+
+	   'c1=0
+	   'c2-c2=0
+	   'c3-c3=0
+	   'c4-c4=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	    'x3-x3=0
+            'x4-x4=0
+
+	   't-t=0
+
+#Process 1 arrives in location l4
+
+transition t19: l4,
+	   
+	   c1>=5
+
+	   'k1-k1-1=0
+	   'k2-k2=0	   
+	   'k3-k3=0
+	   'k4-k4=0
+
+	   'c1=0
+	   'c2-c2=0
+	   'c3-c3=0
+	   'c4-c4=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	    'x3-x3=0
+            'x4-x4=0
+
+	   't-t=0
+
+
+#Process 2 arrives in location l1
+# Make a switch to location l2
+
+transition t11:l1,l2,
+
+	   c2 >=10
+
+	   'c2=0
+	   'c1-c1=0
+	   'c3-c3=0
+	   'c4-c4=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+	   'x4-x4=0
+
+	   'k1-k1=0
+	   'k2-1=0
+	   'k3-k3=0
+	   'k4-k4=0
+
+	   't-t=0
+
+
+#Process 2 arrives in location l3
+
+transition t17: l3,
+
+	   c2 >=10
+
+	   'c2=0
+	   'c1-c1=0
+	    'c3-c3=0
+            'c4-c4=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+	   'x4-x4=0
+
+	   'k1-k1=0
+	   'k2-k2-1=0
+	   'k3-k3=0
+           'k4-k4=0
+
+	   't-t=0
+
+#Process 2 arrives in location l4
+
+transition t20: l4,
+
+	   c2 >=10
+
+	   'c2=0
+	   'c1-c1=0
+	   'c3-c3=0
+	    'c4-c4=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+           'x4-x4=0
+
+	   'k1-k1=0
+	   'k2-k2-1=0
+	   'k3-k3=0
+           'k4-k4=0
+
+	   't-t=0
+
+
+#Process 3 arrives in location l1
+# Make a switch to location l3
+
+transition t14: l1,l3,
+       c3 >= 20
+       
+       'c3=0
+       'c2-c2=0
+       'c1-c1=0
+       'c4-c4=0
+
+       'x1-x1=0
+       'x2-x2=0
+       'x3-x3=0
+       'x4-x4=0
+      
+       'k1-k1=0
+       'k3-1=0
+       'k2-k2=0
+       'k4-k4=0
+
+       't-t=0
+
+#Process 3 arrives in location l2
+#Make a switch to location l3
+
+ transition t18: l2,l3,
+       c3 >= 20
+       
+       'c3=0
+       'c2-c2=0
+       'c1-c1=0
+       'c4-c4=0
+
+       'x1-x1=0
+       'x2-x2=0
+       'x3-x3=0
+       'x4-x4=0
+       
+       'k1-k1=0
+       'k3-1=0
+       'k2-k2=0
+       'k4-k4=0
+
+       't-t=0
+
+#Process 3 arrives in location l4
+
+ transition t21: l4,
+       c3 >= 20
+       
+       'c3=0
+       'c2-c2=0
+       'c1-c1=0
+       'c4-c4=0
+
+       'x1-x1=0
+       'x2-x2=0
+       'x3-x3=0
+       'x4-x4=0
+       
+       'k1-k1=0
+       'k3-k3-1=0
+       'k2-k2=0
+       'k4-k4=0
+
+       't-t=0
+
+
+
+
+#Process 2 completes in location l2
+# Extra process 1 exists
+	    
+transition t12: l2,l1,
+	   x2-4=0
+	   k2-1=0
+	   k1 -1 >=0
+	   
+	   'k2-k2+1=0
+	   'k1-k1=0
+	   'k3-k3=0
+	   'k4-k4=0
+
+	   'x2=0
+	   'x1-x1=0
+	   'x3-x3=0
+           'x4-x4=0
+
+	   't-t=0
+
+	   'c1-c1=0
+	   'c2-c2=0   
+	   'c3-c3=0
+           'c4-c4=0
+
+#Process 3 completes from l3 and extra process 2 exists
+
+transition t15:l3,l2,
+	   x3-8=0
+	   k3-1=0
+	   k2 -1 >=0
+
+	   'k3-k3+1=0
+	   'k2-k2=0
+	   'k1-k1=0
+           'k4-k4=0
+
+	   'x3=0
+	   'x2-x2=0
+	   'x1-x1=0
+           'x4-x4=0
+
+	   't-t=0
+	   
+	   'c1-c1=0
+	   'c2-c2=0   
+	   'c3-c3=0
+           'c4-c4=0
+
+#Process 3 completes and extra process 1 exists
+
+transition t16:l3,l1,
+	   x3-8=0
+	   k3-1=0
+	   k2 =0
+	   k1 -1 >=0
+
+	   'k3-k3+1=0
+	   'k2-k2=0
+	   'k1-k1=0
+           'k4-k4=0
+
+	   'x3=0
+	   'x2-x2=0
+	   'x1-x1=0
+           'x4-x4=0
+
+	   't-t=0
+	   
+	   'c1-c1=0
+	   'c2-c2=0   
+	   'c3-c3=0
+	   'c4-c4=0
+
+#Process 4 arrives in location l1
+# Switch to location l4
+
+transition t23: l1,l4,
+	   c4 >= 40
+	   'c4=0
+	   
+	   'c1-c1=0
+	   'c2-c2=0
+	   'c3-c3=0
+
+	   'k4=1
+	   
+	   'k1-k1=0
+	   'k2-k2=0
+	   'k3-k3=0
+	   
+	   't-t=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+	   'x4-x4=0
+#Process 4 arrives in location l2
+# Switch to location l4
+
+transition t24: l2,l4,
+	   c4 >= 40
+	   'c4=0
+	   
+	   'c1-c1=0
+	   'c2-c2=0
+	   'c3-c3=0
+
+	   'k4=1
+	   
+	   'k1-k1=0
+	   'k2-k2=0
+	   'k3-k3=0
+	   
+	   't-t=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+	   'x4-x4=0
+
+#Process 4 arrives in location l3
+# Switch to location l4
+
+transition t25: l3,l4,
+	   c4 >= 40
+	   'c4=0
+	   
+	   'c1-c1=0
+	   'c2-c2=0
+	   'c3-c3=0
+
+	   'k4=1
+	   
+	   'k1-k1=0
+	   'k2-k2=0
+	   'k3-k3=0
+	   
+	   't-t=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+	   'x4-x4=0
+
+	   	
+#Process 4 completes in location l4
+#Incomplete process 3 exists
+
+transition t26: l4,l3,
+	   k4-1=0
+	   x4-4=0
+	   k3>=1
+	   
+	   'k4-k4+1=0
+	   'k1-k1=0
+	   'k2-k2=0
+	   'k3-k3=0
+	   
+	   	   
+	   't-t=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+	   'x4-x4=0
+
+
+	   'c1-c1=0
+	   'c2-c2=0
+	   'c3-c3=0
+	   'c4-c4=0
+	  
+	
+#Process 4 completes in location l4
+#Incomplete process 2 exists
+
+transition t27: l4,l2,
+	   k4-1=0
+	   x4-4=0
+	   k3=0
+	   k2 >= 1
+ 
+	   'k4-k4+1=0
+	   'k1-k1=0
+	   'k2-k2=0
+	   'k3-k3=0
+	   
+	   	   
+	   't-t=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+	   'x4-x4=0
+
+
+	   'c1-c1=0
+	   'c2-c2=0
+	   'c3-c3=0
+	   'c4-c4=0
+	  
+	   
+	
+#Process 4 completes in location l4
+#Incomplete process 1 exists
+
+transition t28: l4,l1,
+	   k4-1=0
+	   x4-4=0
+	   k3=0
+	   k2=0
+	   k1>=1
+ 
+	   'k4-k4+1=0
+	   'k1-k1=0
+	   'k2-k2=0
+	   'k3-k3=0
+	   
+	   	   
+	   't-t=0
+
+	   'x1-x1=0
+	   'x2-x2=0
+	   'x3-x3=0
+	   'x4-x4=0
+
+
+	   'c1-c1=0
+	   'c2-c2=0
+	   'c3-c3=0
+	   'c4-c4=0
+	  
+	   	   
+   
+end
+
+

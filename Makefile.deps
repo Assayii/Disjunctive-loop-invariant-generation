@@ -1,0 +1,79 @@
+# DO NOT DELETE THIS LINE -- make depend depends on it.
+
+Clump.o: Clump.h ./var-info.h
+Context.o: myassertions.h Context.h Timer.h ./var-info.h Expression.h
+Context.o: Rational.h funcs.h SparseLinExpr.h global_types.h LinExpr.h
+Context.o: LinTransform.h MatrixStore.h PolyStore.h DisequalityStore.h
+Context.o: PolyUtils.h Location.h Clump.h System.h TransitionRelation.h
+Context.o: ExpressionStore.h DualTransitionRelation.h InvariantMap.h
+Context.o: DualInvariantMap.h
+DisequalityStore.o: DisequalityStore.h global_types.h ./var-info.h Rational.h
+DisequalityStore.o: funcs.h SparseLinExpr.h LinExpr.h LinTransform.h
+DisequalityStore.o: MatrixStore.h PolyStore.h PolyUtils.h
+DualInvariantMap.o: myassertions.h PolyUtils.h ./var-info.h LinExpr.h
+DualInvariantMap.o: global_types.h Rational.h funcs.h InvariantMap.h Clump.h
+DualInvariantMap.o: Location.h Context.h Timer.h Expression.h SparseLinExpr.h
+DualInvariantMap.o: LinTransform.h MatrixStore.h PolyStore.h
+DualInvariantMap.o: DisequalityStore.h TransitionRelation.h ExpressionStore.h
+DualInvariantMap.o: DualInvariantMap.h DualTransitionRelation.h
+DualTransitionRelation.o: myassertions.h PolyUtils.h ./var-info.h LinExpr.h
+DualTransitionRelation.o: global_types.h Rational.h funcs.h
+DualTransitionRelation.o: DualTransitionRelation.h Location.h Context.h
+DualTransitionRelation.o: Timer.h Expression.h SparseLinExpr.h LinTransform.h
+DualTransitionRelation.o: MatrixStore.h PolyStore.h DisequalityStore.h
+DualTransitionRelation.o: Clump.h TransitionRelation.h ExpressionStore.h
+Expression.o: myassertions.h funcs.h Rational.h ./var-info.h SparseLinExpr.h
+Expression.o: global_types.h LinExpr.h LinTransform.h MatrixStore.h
+Expression.o: Expression.h
+ExpressionStore.o: Rational.h funcs.h SparseLinExpr.h global_types.h
+ExpressionStore.o: ./var-info.h LinExpr.h MatrixStore.h LinTransform.h
+ExpressionStore.o: Expression.h ExpressionStore.h
+funcs.o: funcs.h Rational.h
+InvariantMap.o: myassertions.h InvariantMap.h ./var-info.h Clump.h Location.h
+InvariantMap.o: Context.h Timer.h Expression.h Rational.h funcs.h
+InvariantMap.o: SparseLinExpr.h global_types.h LinExpr.h LinTransform.h
+InvariantMap.o: MatrixStore.h PolyStore.h DisequalityStore.h PolyUtils.h
+InvariantMap.o: TransitionRelation.h ExpressionStore.h
+LinExpr.o: myassertions.h funcs.h Rational.h ./var-info.h LinExpr.h
+LinExpr.o: global_types.h PolyUtils.h
+LinTransform.o: Rational.h funcs.h LinExpr.h global_types.h ./var-info.h
+LinTransform.o: LinTransform.h
+Location.o: funcs.h Rational.h PolyUtils.h ./var-info.h LinExpr.h
+Location.o: global_types.h Location.h Context.h Timer.h Expression.h
+Location.o: SparseLinExpr.h LinTransform.h MatrixStore.h PolyStore.h
+Location.o: DisequalityStore.h Clump.h
+MatrixStore.o: ./var-info.h SparseLinExpr.h global_types.h Rational.h funcs.h
+MatrixStore.o: LinExpr.h MatrixStore.h
+PolyStore.o: ./var-info.h Rational.h funcs.h SparseLinExpr.h global_types.h
+PolyStore.o: LinExpr.h MatrixStore.h PolyStore.h
+PolyUtils.o: myassertions.h PolyUtils.h ./var-info.h LinExpr.h global_types.h
+PolyUtils.o: Rational.h funcs.h
+Rational.o: Rational.h funcs.h
+SparseLinExpr.o: funcs.h Rational.h myassertions.h PolyUtils.h ./var-info.h
+SparseLinExpr.o: LinExpr.h global_types.h SparseLinExpr.h
+SparseLinTransform.o: myassertions.h SparseLinTransform.h Rational.h funcs.h
+SparseLinTransform.o: ./var-info.h SparseLinExpr.h global_types.h LinExpr.h
+System.o: myassertions.h System.h ./var-info.h Clump.h Location.h Context.h
+System.o: Timer.h Expression.h Rational.h funcs.h SparseLinExpr.h
+System.o: global_types.h LinExpr.h LinTransform.h MatrixStore.h PolyStore.h
+System.o: DisequalityStore.h PolyUtils.h TransitionRelation.h
+System.o: ExpressionStore.h DualTransitionRelation.h InvariantMap.h
+System.o: DualInvariantMap.h
+Timer.o: Timer.h
+TransitionRelation.o: myassertions.h PolyUtils.h ./var-info.h LinExpr.h
+TransitionRelation.o: global_types.h Rational.h funcs.h TransitionRelation.h
+TransitionRelation.o: Clump.h Location.h Context.h Timer.h Expression.h
+TransitionRelation.o: SparseLinExpr.h LinTransform.h MatrixStore.h
+TransitionRelation.o: PolyStore.h DisequalityStore.h ExpressionStore.h
+TransitionRelation.o: DualTransitionRelation.h
+var-info.o: myassertions.h ./var-info.h
+ltrtest.tab.o: ./var-info.h Location.h Context.h Timer.h Expression.h
+ltrtest.tab.o: Rational.h funcs.h SparseLinExpr.h global_types.h LinExpr.h
+ltrtest.tab.o: LinTransform.h MatrixStore.h PolyStore.h DisequalityStore.h
+ltrtest.tab.o: PolyUtils.h Clump.h TransitionRelation.h ExpressionStore.h
+ltrtest.tab.o: InvariantMap.h DualInvariantMap.h DualTransitionRelation.h
+ltrtest.tab.o: System.h ltrtest.tab.h
+lex.yy.o: ./var-info.h Location.h Context.h Timer.h Expression.h Rational.h
+lex.yy.o: funcs.h SparseLinExpr.h global_types.h LinExpr.h LinTransform.h
+lex.yy.o: MatrixStore.h PolyStore.h DisequalityStore.h PolyUtils.h Clump.h
+lex.yy.o: TransitionRelation.h ExpressionStore.h ltrtest.tab.h

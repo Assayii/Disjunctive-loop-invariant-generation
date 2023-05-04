@@ -1,0 +1,147 @@
+#
+#folklore example
+#From the description in Halbwachs97 
+# journal paper
+#
+
+variable [b1 s d]
+propsteps(2)
+
+Location ontime
+b1=0
+s=0
+d=0
+
+Location late1
+b1 -s +10 =0
+d=0
+b1 >=0
+s>=0
+
+Location onbrake
+b1-s-10=0
+d=0
+b1 >=0
+s>=0
+
+
+
+#
+#at location ontime beacon is not going to advance 
+#
+
+#second advances
+
+Transition second_advance:ontime,ontime,
+
+'b1-b1=0
+'s-s-1=0
+'d-d=0
+
+#beacon advances
+
+Transition beacon_advance:ontime,
+'b1-b1-1=0
+'s-s=0
+'d-d=0
+
+#Train 1 is 10 beacons behind
+
+Transition run_late1: ontime,late1,
+b1-s+10<=0
+'b1-b1=0
+'s-s=0
+'d-d=0
+
+
+#Train 1 beacon advance when late
+
+Transition tr1_beacon_advance:late1,
+'b1-b1-1=0
+preserve[s,d]
+
+
+#Train 1 comes back on time
+
+Transition back_on_time1: late1,ontime,
+b1 -s >=0
+preserve[b1,s,d]
+
+
+#Train 1 becomes early
+
+Transition run_early1: ontime,onbrake,
+b1 -s -10 >=0
+'d=0
+preserve[b1,s]
+
+
+#delay and second advance when on brake
+
+Transition on_brake_second_tick: onbrake,
+'s-s-1=0
+'d-d-1=0
+'b1-b1=0
+
+
+#beacon advance
+
+Transition onbrake_beacon_advance:onbrake,
+'b1-b1-1=0
+preserve[s,d]
+
+#onbrake to ontime
+
+Transition back_on_time_ob: onbrake,ontime,
+b1 - s <=0
+'d=0
+preserve[s,b1] 
+
+Transition complete_stop_os: onbrake,stopped,
+d -10 >=0
+preserve[b1,d,s]
+
+
+Transition time_advance_on_stop_1: stopped,stopped,
+'s-s-1=0
+preserve[b1,d]
+
+
+Transition back_on_time_so: stopped,ontime,
+b1 -s <=0
+'d=0
+preserve[b1,s]
+
+
+invariant ontime:
+ b1 >=0
+ s>=0
+ b1- s <= 10
+ b1 -s + 10 >=0
+
+
+invariant late1:
+  b1 - s <= 0 
+  b1 >=0
+  s>= 0
+
+invariant onbrake:
+ b1 -s >= 0
+ d <=10
+ d>=0
+ b1 >=0
+ s>=0
+ 
+
+invariant stopped:
+ b1 -s >= 0 
+ d>=10
+ b1 >=0
+ s>=0
+
+
+end
+
+
+
+

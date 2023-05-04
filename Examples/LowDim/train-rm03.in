@@ -1,0 +1,102 @@
+#
+# Copied from Rusinowich and Musset TR
+# 2003. 
+# 
+
+variable [v d a afu amax d0]
+
+propsteps(3)
+
+Location l0
+	 v=0
+	 a=0
+         d- d0=0
+	 d0>=1
+	 afu >=0
+         amax>=0
+	 
+
+invariant l0:
+	v>=0
+	afu >=0
+      afu - a >=0
+      afu >=0
+        amax>=0
+	afu -v >=0  
+
+	 
+Transition t1: l0,
+
+      afu     - 'a  = 0 
+      afu  - v  +   'v  = 0 
+      v     - afu  >= 0 
+      v     - d     - amax >= 0 
+      v     - d     - afu  +   'd  >= 0
+      
+      'afu -afu=0
+      'amax-amax=0
+      'd0-d0=0
+
+
+Transition t2: l0,
+	 
+	 
+   afu     -  'a   = 0 
+    'v     = 0 
+   v     -  d     -  amax >= 0 
+   'a      -  v   >= 0 
+   'd      -  d    >= 0 
+         'afu -afu=0
+      'amax-amax=0
+      'd0-d0=0
+
+
+Transition t3: l0,
+	         
+	   afu - 'a =0
+	     v - afu -'v =0
+	      v - afu >=0
+	       v - afu + amax >=0
+	       v -d -afu +'d >=0
+	             'afu -afu=0
+      'amax-amax=0
+      'd0-d0=0
+
+
+Transition t4: l0,
+	   
+	    afu     -  'a  = 0 
+            'v  = 0 
+            v  +     amax     -  'a  >= 0 
+         d  -    'd  <= 0 
+         v  -     'a <= 0 
+	       'afu -afu=0
+      'amax-amax=0
+      'd0-d0=0
+
+Transition t5: l0,
+	   
+	  'v -   v    -   'a  = 0 
+             'v  >= 0 
+        v  +      amax     -   'v >= 0 
+         afu -   v      -   amax >= 0 
+         d -   v  +       amax >= 0 
+        'v  -   d  +          'd >= 0 
+
+	      'afu -afu=0
+      'amax-amax=0
+      'd0-d0=0
+
+Transition t6: l0,
+	   
+    'v  = 0 
+     1* amax     -1* 'a >= 0 
+         afu - v     -1* amax >= 0 
+         'd -1* d   >= 0 
+         d -1* v   +   1* amax >= 0 
+        'a + v <= 0
+	 'afu -afu=0
+      'amax-amax=0
+      'd0-d0=0
+
+end

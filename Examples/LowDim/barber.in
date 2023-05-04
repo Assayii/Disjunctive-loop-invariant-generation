@@ -1,0 +1,115 @@
+variable [barber 
+  chair 
+  open 
+  p1 
+  p2 
+  p3 
+  p4 
+  p5 ]
+
+propsteps(3)
+
+Location l0
+     barber=0  
+     chair=0  
+     open=0  
+     p1=0   
+     p2=0  
+     p3=0 
+    p4=0 
+    p5=0 
+
+
+
+transition t1: l0,
+    p1 =0
+    barber >= 1
+   'barber = barber-1
+   'chair = chair+1
+    'p1 = 1
+   preserve[open,p2,p3,p4,p5]
+
+
+transition t3: l0,
+	p2 = 0 
+        barber >= 1
+        'barber = barber-1
+        'chair = chair+1
+        'p2 = 1
+
+	preserve[open,p1,p3,p4,p5]
+
+transition t4: l0,
+	p2 =1 
+	open >=1
+	'open = open -1
+	'p2 =0
+	preserve[barber,chair,p1,p3,p4,p5]
+
+transition t5: l0,
+	p3=0
+	barber >=1 
+	'barber -barber+1 =0
+	'chair -chair -1 = 0
+	'p3 =1
+	preserve[open, p1,p2,p4,p5]
+
+transition t6: l0,
+	p3 =1
+	open >=1 
+	'open -open +1 =0
+	'p3 =0
+	preserve[barber,chair,p1,p2,p4,p5]
+
+transition t7: l0,
+	p4 =0
+	barber >=1
+	'barber= barber-1
+	'chair = chair +1
+	'p4 = p4+1
+	preserve[open,p1,p2,p3,p5]
+
+
+transition t8: l0,
+	p4 =1
+	open >=1
+	'open -open +1 =0
+	'p4=p4 -1
+	preserve[barber,chair,p1,p2,p3,p5]
+
+transition t9:l0,
+	p5=0
+	'barber=barber+1
+	'p5-1=0
+	preserve[open,chair,p1,p2,p3,p4]
+
+transition t10:l0,
+	p5=1
+	chair >=1 
+	'chair-chair +1 =0
+	'p5=2
+	preserve[barber,open,p1,p2,p3,p4]
+
+transition t11:l0,
+	p5=2
+	'open=open +1
+	'p5=3
+	preserve[barber,chair,p1,p2,p3,p4]
+
+
+transition t12:l0,
+	p5 = 3
+	open = 0
+	'p5=0
+	preserve[barber,chair,open,p1,p2,p3,p4]
+
+
+transition t2: l0,
+	p1 = 1 
+        open >= 1
+	
+        'open = open-1
+        'p1 = 0
+	preserve[barber,chair,p2,p3,p4,p5]
+
+end

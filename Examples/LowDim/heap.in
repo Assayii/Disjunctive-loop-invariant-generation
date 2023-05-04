@@ -1,0 +1,63 @@
+variable [ n l r i j]
+
+propsteps(6)
+
+#
+#Adaptation of the heap sort example
+#from the CAV 2003 paper
+#
+
+location l0
+n >= 2
+r -n =0 
+i -l=0
+j -2 *l =0
+2 * l  -n  >=0
+2*l -n -1 <=0
+
+
+transition t1: l0,
+
+r -j  -1 >= 0
+'i -j -1 =0
+'j - 2*j =2
+'l-l=0
+'r-r=0
+'n-n=0
+
+
+transition t2: l0,
+
+j -r <=0
+'j - 2*j =0
+
+'i -j =0
+
+'l -l =0
+'r -r =0
+'n-n=0
+
+transition t3: l0,
+
+l >=2
+r  >=2
+l-'i=1
+2 *l-'j= 2
+l -'l =1 
+'r -r =0
+'n-n=0
+
+transition t4: l0,
+
+l <= 1
+r -'r = 1
+r >=3
+'i -l =0
+'j - 2*l =0
+'l -l =0
+'n-n=0
+
+
+end
+
+

@@ -1,0 +1,12 @@
+
+
+for i in `cat torun`
+do
+echo Running $i...
+../../lsting invcheck < $i > RUNME.script.out
+echo Done!!
+done 
+
+ 
+
+

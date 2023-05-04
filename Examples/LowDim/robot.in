@@ -1,0 +1,26 @@
+variable [x y t]
+
+#Example taken originally from Henzinger Ho 1993?
+# See CAV 2003 paper for details
+
+
+Transition t0: l0,
+
+  t -y +'y -'t +6 >=0
+  y     +2* t  -  1* 'y  -   2* 't     +3 <= 0
+ 1* x     -2* t     -1* 'x  +   2* 't  >= 0
+ 1* 't -t    -2 >= 0
+ 1* y     -2* t     -1* 'y  +   2* 't     -3 >= 0
+ 1* t     -1* 't  +   4 >= 0
+ 1* y  +   1* t     -1* 'y     -1* 't  +   6 >= 0
+ 1* t  +   1* 'x     -1* 't -x >= 0
+
+
+Location l0 
+	 x=0
+	 y=0
+	 t=0
+
+
+end
+

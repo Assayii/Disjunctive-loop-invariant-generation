@@ -1,0 +1,29 @@
+variable [x y]
+
+Location l1
+x=0 
+y=0
+
+Transition t1: l1,
+x <= 100
+'x-x-1=0
+'y-y-1=0
+
+Transition t2: l1,
+x <= 100
+'x-x-2=0
+'y-y-2=0
+
+Transition t3: l1,
+x <= 100
+'x-x-2=0
+'y-y-2=0
+
+Transition t4: l1,
+x <= 100
+'x-x-3=0
+'y-y-3=0
+
+end	
+
+

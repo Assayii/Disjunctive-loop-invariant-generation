@@ -1,0 +1,103 @@
+#
+# last in first served
+# taken from FAST web page
+#
+
+variable[
+I  Sa Ea Ma Sb Eb Mb
+]
+
+propsteps(6)
+
+Location l0
+I>=1 
+Sa=0 
+ Ea=0 
+Ma=0 
+ Sb=0 
+ Eb=0 
+ Mb=0
+
+
+
+transition t2:l0,
+	Sb >= 1
+	'Sb -Sb+1=0
+	'Sa- Ea-Ma-1=0
+	'Ea = 0
+        'Ma = 0
+	preserve[ Eb, Mb, I ]
+
+transition t1: l0,
+	I >= 1 
+	'I = I -1
+	'Sa = Sa + Ea + Ma + 1
+	'Ea = 0
+	'Ma =0
+	preserve[ Sb, Eb, Mb ]
+
+transition t3: l0,
+	I>=1
+	'I=I-1
+	'Sb=Sb+Eb+Mb+1
+	 'Eb=0
+	 'Mb=0
+	preserve[ Sa, Ea, Ma ]
+
+transition t4: l0,
+	Sa>=1
+	 'Sa=Sa-1
+	 'Sb=Sb+Eb+Mb+1
+	 'Eb=0
+	 'Mb=0
+	preserve[ I, Ea, Ma ]
+transition t5: l0,
+	Sa>=1
+	'I=I+Sa+Ea+Ma 
+	'Sa=0
+	'Ea=1
+	'Ma=0
+
+	preserve[ Sb, Eb, Mb]
+
+transition t6: l0,
+	Sb>=1
+	'Sb=Sb-1
+	 'I=I+Sa+Ea+Ma 
+	 'Sa=0
+	 'Ea=1
+	 'Ma=0
+	preserve[ Eb Mb]
+
+transition t7: l0,
+	 Sb>=1
+	 'I=I+Sb+Eb+Mb
+	 'Sb=0
+	 'Eb=1
+	 'Mb=0
+	preserve[ Sa, Ea, Ma ]
+
+
+transition t8: l0,
+
+	Sa>=1
+	 'Sa=Sa-1
+	 'I=I+Sb+Eb+Mb 
+	 'Sb=0
+	 'Eb=1
+	 'Mb=0
+	preserve[ Ea, Ma]
+
+transition t9: l0,
+	Ea >=1
+	'Ea = Ea -1
+	'Ma = Ma +1
+	preserve[I, Sa, Sb, Eb, Mb]
+
+transition t10: l0,
+	Eb >=1
+	'Eb = Eb -1
+	'Mb = Mb +1
+	preserve[I, Sb, Sa, Ea, Ma]
+
+end

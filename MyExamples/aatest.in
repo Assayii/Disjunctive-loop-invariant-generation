@@ -1,0 +1,10 @@
+variable [x]
+
+Location l0
+x=0
+
+Transition t1: l0,
+x <= 100
+'x-x-1=0
+
+end	

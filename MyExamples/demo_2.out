@@ -1,0 +1,3467 @@
+Locations-------------------------
+Location:l0
+# of variables2
+ Initial Condition: [[ 
+
+1*y -101  = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+True
+
+]]
+
+Locations with mod--------------------------------
+Location:l0
+# of variables2
+ Initial Condition: [[ 
+
+1*y -101  = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+True
+
+]]
+
+Location:l1
+# of variables2
+ Initial Condition: [[ 
+
+1*y -101  = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+True
+
+]]
+
+Location:l2
+# of variables2
+ Initial Condition: [[ 
+
+1*y -101  = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+True
+
+]]
+
+Location:l3
+# of variables2
+ Initial Condition: [[ 
+
+1*y -101  = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+True
+
+]]
+
+Transitions----------------------------------
+Transition Relation
+Name: t1
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+-1*x  + 100 >= 0
+ ]]
+Update [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transitions with mod----------------------------------
+Transition Relation
+Name: l0-l0
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l0-l1
+Pre-Location:l0  Post-Location:l1
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l0-l2
+Pre-Location:l0  Post-Location:l2
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l0-l3
+Pre-Location:l0  Post-Location:l3
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l1-l0
+Pre-Location:l1  Post-Location:l0
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l1-l1
+Pre-Location:l1  Post-Location:l1
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l1-l2
+Pre-Location:l1  Post-Location:l2
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l1-l3
+Pre-Location:l1  Post-Location:l3
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l2-l0
+Pre-Location:l2  Post-Location:l0
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l2-l1
+Pre-Location:l2  Post-Location:l1
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l2-l2
+Pre-Location:l2  Post-Location:l2
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l2-l3
+Pre-Location:l2  Post-Location:l3
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l3-l0
+Pre-Location:l3  Post-Location:l0
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l3-l1
+Pre-Location:l3  Post-Location:l1
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l3-l2
+Pre-Location:l3  Post-Location:l2
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Transition Relation
+Name: l3-l3
+Pre-Location:l3  Post-Location:l3
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+True
+ ]]
+Update [[
+True
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+---------------------------------------------------
+ Local invariants to be generated : 1
+ Increasing invariants to be generated : 1
+ Strategy ID #2
+ # of initial propagation steps:2
+ Weave Time allowed:360000
+ Cousot-Halbwachs to be performed:1
+ BHRZ03 to be performed:1
+----------------------------------------------------
+
+1.
+The locations read in are:
+
+Location:l0
+# of variables2
+ Initial Condition: [[ 
+
+1*y -101  = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+True
+
+]]
+
+Dualizing....(in location)
+
+- 1.Before remove_higher_space_dimension(nd), result(based on cs) is : 
+A - Q = 0, B - P = 0, 101*B + C >= 0
+
+- 2.After remove_higher_space_dimension(nd), result(based on cs) is : 
+101*B + C >= 0
+----------------------------------------------
+
+2.
+The transitions read in are::
+
+Transition Relation
+Name: t1
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+-1*x  + 100 >= 0
+ ]]
+Guard [[
+-1*x  + 100 >= 0
+ ]]
+Update [[
+1*y -1*`y -1  = 0 
+1*x -1*`x  + 1  = 0 
+ ]]
+Preserved [[
+]]
+Transition Relation Ends
+
+Dualizing....(in transitionrelation)
+After remove_higher_space_dimensions: 
+polyd is: B - E = 0, A - D >= 0, -100*A - B - C + 101*D + F >= 0
+After cs=polyd.minimized_constraints: 
+cs is: B - E = 0
+cs is: A - D >= 0
+cs is: -100*A - B - C + 101*D + F >= 0
+----------------------------------------------
+
+3.
+
+In factorizing_strategy_equalities(): 
+
+In split_on_factor_equlities(LinTransform & lt): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In factorizing_strategy_equalities(): 
+
+In factorizing_strategy_equalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In factorizing_strategy_equalities(): 
+
+In simplify_repeat(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+
+In move_constraints()
+
+In move_constraints_equalities(): 
+
+In move_constraints_inequalities(): 
+Location::l0 pushing back clump with 2 Polyhedra
+
+In add_clump, the new clump cl is ... 
+
+clump_poly_count is 1
+101*B + C >= 0, A - B >= 0
+
+clump_poly_count is 2
+B = 0, -A >= 0, 101*A + C >= 0
+... done
+----------------------------------------------
+
+4.
+
+- In extract_invariant_and_update(C_Polyhedron & pp, & dualp) : 
+
+- For location l0
+
+- pp is 101*B + C >= 0, A - B >= 0
+
+- pp.minimized_generators() is l(O), l(M), l(N), l(A + B - 101*C), l(D), l(E), l(F), l(G), l(H), l(I), l(J), l(K), l(L), r(A), r(A + B), p(0)
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(O)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 1
+- lin is O
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is O
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is O
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is O
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is O
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is O
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is O
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is O
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is O
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is O
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is O
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is O
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is O
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is O
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is O
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is true
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(M)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 1
+- lin is M
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is M
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is M
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is M
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is M
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is M
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is M
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is M
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is M
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is M
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is M
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is M
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is M
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is true
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(N)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 1
+- lin is N
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is N
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is N
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is N
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is N
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is N
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is N
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is N
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is N
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is N
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is N
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is N
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is N
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is N
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is true
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(A + B - 101*C)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is 0
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is 0
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is -101
+- lin is -101*C
+
+- Variable(1) is B
+- g.coefficient(B) is 1
+- lin is B - 101*C
+
+- Variable(0) is A
+- g.coefficient(A) is 1
+- lin is A + B - 101*C
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 1
+- lin1 is A
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 1
+- lin1 is A + B
+
+- handle_integers(-101) is 1
+- lin.coefficient(Variable(l+i)) is -101
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is -101
+- lin1 is A + B - 101
+l0=>1*x +1*y -101(add_to_invariant!)==0
+invariant is A + B = 101
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(D)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is 0
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is 0
+
+- Variable(3) is D
+- g.coefficient(D) is 1
+- lin is D
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is D
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is D
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is D
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(E)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is 0
+
+- Variable(4) is E
+- g.coefficient(E) is 1
+- lin is E
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is E
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is E
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is E
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is E
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(F)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 1
+- lin is F
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is F
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is F
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is F
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is F
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is F
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(G)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 1
+- lin is G
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is G
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is G
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is G
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is G
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is G
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is G
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(H)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 1
+- lin is H
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is H
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is H
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is H
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is H
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is H
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is H
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is H
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(I)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 1
+- lin is I
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is I
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is I
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is I
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is I
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is I
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is I
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is I
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is I
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(J)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 1
+- lin is J
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is J
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is J
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is J
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is J
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is J
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is J
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is J
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is J
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is J
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(K)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 1
+- lin is K
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is K
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is K
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is K
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is K
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is K
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is K
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is K
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is K
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is K
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is K
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(L)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 1
+- lin is L
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is L
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is L
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is L
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is L
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is L
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is L
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is L
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is L
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is L
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is L
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is L
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(A)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is 0
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is 0
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is 0
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is 0
+
+- Variable(0) is A
+- g.coefficient(A) is 1
+- lin is A
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 1
+- lin1 is A
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is A
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is A
+l0=>1*x (add_to_invariant!)>=0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(A + B)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is 0
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is 0
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is 0
+
+- Variable(1) is B
+- g.coefficient(B) is 1
+- lin is B
+
+- Variable(0) is A
+- g.coefficient(A) is 1
+- lin is A + B
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 1
+- lin1 is A
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 1
+- lin1 is A + B
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is A + B
+l0=>1*x +1*y (add_to_invariant!)>=0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is p(0)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is 0
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is 0
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is 0
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is 0
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)>=0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_and_update(C_Polyhedron & pp, & dualp) : 
+
+- For location l0
+
+- pp is B = 0, 101*A + C >= 0, -A >= 0
+
+- pp.minimized_generators() is l(O), l(L), l(N), l(M), l(D), l(E), l(F), l(G), l(H), l(I), l(J), l(K), p(0), r(C), r(-A + 101*C)
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(O)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 1
+- lin is O
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is O
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is O
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is O
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is O
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is O
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is O
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is O
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is O
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is O
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is O
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is O
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is O
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is O
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is O
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(L)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 1
+- lin is L
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is L
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is L
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is L
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is L
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is L
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is L
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is L
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is L
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is L
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is L
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is L
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(N)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 1
+- lin is N
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is N
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is N
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is N
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is N
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is N
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is N
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is N
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is N
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is N
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is N
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is N
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is N
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is N
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(M)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 1
+- lin is M
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is M
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is M
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is M
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is M
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is M
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is M
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is M
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is M
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is M
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is M
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is M
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is M
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(D)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is 0
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is 0
+
+- Variable(3) is D
+- g.coefficient(D) is 1
+- lin is D
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is D
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is D
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is D
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(E)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is 0
+
+- Variable(4) is E
+- g.coefficient(E) is 1
+- lin is E
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is E
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is E
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is E
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is E
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(F)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 1
+- lin is F
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is F
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is F
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is F
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is F
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is F
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(G)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 1
+- lin is G
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is G
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is G
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is G
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is G
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is G
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is G
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(H)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 1
+- lin is H
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is H
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is H
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is H
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is H
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is H
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is H
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is H
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(I)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 1
+- lin is I
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is I
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is I
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is I
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is I
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is I
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is I
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is I
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is I
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(J)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 1
+- lin is J
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is J
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is J
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is J
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is J
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is J
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is J
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is J
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is J
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is J
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is l(K)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 1
+- lin is K
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is K
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is K
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is K
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is K
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is K
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is K
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is K
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is K
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is K
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is K
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)==0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is p(0)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is 0
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is 0
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is 0
+- lin is 0
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is 0
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 0
+- lin1 is 0
+l0=>0(add_to_invariant!)>=0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(C)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is 0
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is 0
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is 1
+- lin is C
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is C
+
+- Variable(0) is A
+- g.coefficient(A) is 0
+- lin is C
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is 0
+- lin1 is 0
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is 0
+
+- handle_integers(1) is 1
+- lin.coefficient(Variable(l+i)) is 1
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 1
+- lin1 is 1
+l0=> + 1(add_to_invariant!)>=0
+invariant is A + B = 101, A >= 0
+
+- In extract_invariant_from_generator(Generator const & g): 
+
+- Generator const & g is r(-A + 101*C)
+
+- g.space_dimension() is 15
+
+- Variable(14) is O
+- g.coefficient(O) is 0
+- lin is 0
+
+- Variable(13) is N
+- g.coefficient(N) is 0
+- lin is 0
+
+- Variable(12) is M
+- g.coefficient(M) is 0
+- lin is 0
+
+- Variable(11) is L
+- g.coefficient(L) is 0
+- lin is 0
+
+- Variable(10) is K
+- g.coefficient(K) is 0
+- lin is 0
+
+- Variable(9) is J
+- g.coefficient(J) is 0
+- lin is 0
+
+- Variable(8) is I
+- g.coefficient(I) is 0
+- lin is 0
+
+- Variable(7) is H
+- g.coefficient(H) is 0
+- lin is 0
+
+- Variable(6) is G
+- g.coefficient(G) is 0
+- lin is 0
+
+- Variable(5) is F
+- g.coefficient(F) is 0
+- lin is 0
+
+- Variable(4) is E
+- g.coefficient(E) is 0
+- lin is 0
+
+- Variable(3) is D
+- g.coefficient(D) is 0
+- lin is 0
+
+- Variable(2) is C
+- g.coefficient(C) is 101
+- lin is 101*C
+
+- Variable(1) is B
+- g.coefficient(B) is 0
+- lin is 101*C
+
+- Variable(0) is A
+- g.coefficient(A) is -1
+- lin is -A + 101*C
+
+- handle_integers(-1) is 1
+- lin.coefficient(Variable(l+i)) is -1
+- Variable(0) is A
+- l is 0
+- i is 0
+- c is -1
+- lin1 is -A
+
+- handle_integers(0) is 1
+- lin.coefficient(Variable(l+i)) is 0
+- Variable(1) is B
+- l is 0
+- i is 1
+- c is 0
+- lin1 is -A
+
+- handle_integers(101) is 1
+- lin.coefficient(Variable(l+i)) is 101
+- Variable(2) is C
+- l is 0
+- n is 2
+- c is 101
+- lin1 is -A + 101
+l0=>-1*x  + 101(add_to_invariant!)>=0
+invariant is A + B = 101, -A >= -101, A >= 0
+strategy ID 2 ending (num_context==2)
+----------------------------------------------
+
+5.
+The locations read in are:
+
+Location:l0
+# of variables2
+ Initial Condition: [[ 
+
+1*y -101  = 0 
+1*x   = 0 
+
+]]
+ Invariant: [[ 
+
+1*x +1*y -101  = 0 
+-1*x  + 101 >= 0
+1*x  >= 0
+
+]]
+----------------------------------------------
+ # of Contexts generated =4
+ # pruned by inclusion tests = 1
+ # of invariants *weav*ed=2
+ #  *bang*ed=0
+ # Pruned in Cump.cc =0
+ Time Taken (0.01S)=2
+
+
+ Doing Initial Propagation
+Propagation done -- Time Taken (0.01S):0
+---- Running Cousot-Halbwachs with H79 widening ----
+ The computed invariant map is 
+ Location:l0
+ [[ 
+1*x +1*y -101  = 0 
+1*x  >= 0
+
+]]
+
+Time spent propagating stuff: (0.01s) 0
+Time spent widening stuff: (0.01s)0
+
+
+ Time taken for Cousot-Halbwachs Widening (0.01 S)0
+ The bake-off results vs. CH79
+Location :l0  + 
+--------------------------------------------------------
+---- Running Cousot-Halbwachs with BHRZ03 widening ----
+ The computed invariant map is 
+ Location:l0
+ [[ 
+1*x +1*y -101  = 0 
+1*x  >= 0
+
+]]
+
+Time spent propagating stuff: (0.01s) 0
+Time spent widening stuff: (0.01s)0
+
+
+ Time taken for BHRZ03 (0.01 S)0
+ The bake-off results vs. BHRZ03
+Location :l0  + 
+--------------------------------------------------------
+ Time taken for the initial propagation (0.01 S)0
+ Time taken for the quantifier elimination (0.01 S)2
+ Total Time taken (0.01S) 2

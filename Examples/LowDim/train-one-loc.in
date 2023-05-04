@@ -1,0 +1,75 @@
+variable [ b1 s d]
+
+propsteps(4)
+
+Location l0
+b1=0
+s=0
+d=0
+
+
+#transitions modelling time advance
+
+#things are on time when the beacon is within 10 ticks of the 
+#second
+
+Transition time_advance_ontime: l0,
+ b1 -s -10 <=0
+ b1 -s + 10 >=0
+ 'd=0
+ 's-s-1=0
+ preserve[b1]
+
+
+#train 1 is late there is no time advance
+
+#train 1 is early time advance means that 
+#delay advances for first 10 seconds
+
+Transition time_advance_brake1:l0,
+  b1 -s  >=1
+  d -10 <=0
+
+  's-s-1=0
+  'd-d=0
+   'b1-b1=0
+
+
+Transition time_advance_stop1:l0,
+  b1-s >= 1
+  d -10 >=0
+  's-s-1=0
+  'd-d=0
+  'b1-b1=0
+
+
+#beacon advance
+
+#on time
+
+Transition beacon_advance_ontime: l0,
+ b1 -s -9 <=0
+ b1 -s + 9 >=0
+ 'd=0
+ 'b1-b1-1=0
+ preserve[s]
+
+
+Transition beacon_advance_late1:l0,
+  b1 -s +1 <= 0
+  'b1-b1=0
+  d=0
+  preserve[s,d]
+
+Transition beacon_advance_brake1:l0,
+ b1-s -1 >=0
+ d-10 <=0 
+'d-d-1=0
+ 'b1-b1-1=0
+ 's-s=0
+
+#beacon does not advance when completely stopped
+  
+
+end
+  

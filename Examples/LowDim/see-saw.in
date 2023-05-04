@@ -1,0 +1,37 @@
+variable [x y]
+
+#
+# A simple 2D example.
+# Safety analysis can be 
+# "cooked" by modifying this
+# system. CH79 widens out to true
+#
+
+Location l0
+x=0
+y=0
+
+Transition t1: l0,
+x-5 >=0
+x -7 <=0
+'x-x-2=0
+'y-y-1=0
+
+Transition t2: l0,
+x -4 <=0
+'x-x-1=0
+'y-y-2=0
+
+Transition t3: l0,
+x >= 7
+x<=9
+'x-x-1=0
+'y-y-3=0
+
+Transition t4: l0,
+x >= 9
+'x-x-2=0
+'y-y-1=0
+
+
+end

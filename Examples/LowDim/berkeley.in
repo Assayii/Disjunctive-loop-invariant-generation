@@ -1,0 +1,41 @@
+#
+# BERKELEY model taken from Fast
+#
+
+variable[ invalid
+unowned
+nonexclusive
+exclusive]
+
+propsteps(3)
+
+
+location l0
+	exclusive=0
+	 nonexclusive=0 
+	 unowned=0 
+	 invalid>= 1
+
+
+transition t1: l0,
+	invalid >= 1
+	'nonexclusive=nonexclusive+exclusive
+	'exclusive=0
+	'invalid=invalid-1
+	'unowned=unowned+1
+
+transition t2: l0,
+	nonexclusive + unowned >=1
+	'invalid=invalid + unowned + nonexclusive-1
+	'exclusive=exclusive+1
+	'unowned=0
+	'nonexclusive=0     	
+	
+transition t3: l0,
+	invalid >= 1
+		'unowned=0
+		'nonexclusive=0
+		'exclusive=1
+		'invalid=invalid+unowned+exclusive+nonexclusive-1
+
+end

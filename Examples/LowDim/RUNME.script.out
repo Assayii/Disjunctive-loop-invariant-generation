@@ -1,0 +1,336 @@
+---------------------------------------------------
+ Local invariants to be generated : 1
+ Increasing invariants to be generated : 1
+ Strategy ID #2
+ # of initial propagation steps:3
+ Weave Time allowed:360000
+ Cousot-Halbwachs to be performed:1
+ BHRZ03 to be performed:1
+----------------------------------------------------
+The locations read in are:
+
+Location:l0
+# of variables6
+ Initial Condition: [[ 
+
+1*d -1*d0   = 0 
+1*a   = 0 
+1*v   = 0 
+1*d -1 >= 0
+1*amax  >= 0
+1*afu  >= 0
+
+]]
+ Invariant: [[ 
+
+True
+
+]]
+
+Dualizing....
+The transitions read in are::
+
+Transition Relation
+Name: t1
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*d0 -1*`d0   = 0 
+1*amax -1*`amax   = 0 
+1*v -1*`afu   = 0 
+1*v -1*`a   = 0 
+1*`v   = 0 
+1*v -1*afu   = 0 
+1*v  >= 0
+1*v -1*d -1*amax  >= 0
+-1*d +1*`d  >= 0
+1*v -1*a  >= 0
+1*amax  >= 0
+ ]]
+Guard [[
+1*v -1*afu   = 0 
+1*v -1*a  >= 0
+1*amax  >= 0
+1*v  >= 0
+1*v -1*d -1*amax  >= 0
+ ]]
+Update [[
+1*afu -1*`a   = 0 
+1*v -1*afu -1*`v   = 0 
+1*v -1*d -1*afu +1*`d  >= 0
+ ]]
+Preserved [[
+  afu    amax    d0  ]]
+Transition Relation Ends
+
+Dualizing....
+Transition Relation
+Name: t2
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*d0 -1*`d0   = 0 
+1*amax -1*`amax   = 0 
+1*afu -1*`afu   = 0 
+1*afu -1*`a   = 0 
+1*`v   = 0 
+-1*v +1*afu  >= 0
+-1*d +1*`d  >= 0
+1*v -1*d -1*amax  >= 0
+-1*a +1*afu  >= 0
+1*amax  >= 0
+1*v  >= 0
+ ]]
+Guard [[
+-1*v +1*afu  >= 0
+-1*a +1*afu  >= 0
+1*amax  >= 0
+1*v  >= 0
+1*v -1*d -1*amax  >= 0
+ ]]
+Update [[
+1*afu -1*`a   = 0 
+1*`v   = 0 
+-1*d +1*`d  >= 0
+ ]]
+Preserved [[
+  afu    amax    d0  ]]
+Transition Relation Ends
+
+Dualizing....
+Transition Relation
+Name: t3
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*d0 -1*`d0   = 0 
+1*amax -1*`amax   = 0 
+1*v -1*`afu   = 0 
+1*v -1*`a   = 0 
+1*`v   = 0 
+1*v -1*afu   = 0 
+1*v  >= 0
+1*amax  >= 0
+-1*d +1*`d  >= 0
+1*v -1*a  >= 0
+ ]]
+Guard [[
+1*v -1*afu   = 0 
+1*v -1*a  >= 0
+1*amax  >= 0
+1*v  >= 0
+ ]]
+Update [[
+1*afu -1*`a   = 0 
+1*v -1*afu -1*`v   = 0 
+1*v -1*d -1*afu +1*`d  >= 0
+ ]]
+Preserved [[
+  afu    amax    d0  ]]
+Transition Relation Ends
+
+Dualizing....
+Transition Relation
+Name: t4
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*d0 -1*`d0   = 0 
+1*amax -1*`amax   = 0 
+1*afu -1*`afu   = 0 
+1*afu -1*`a   = 0 
+1*`v   = 0 
+-1*v +1*afu  >= 0
+-1*d +1*`d  >= 0
+1*v -1*afu +1*amax  >= 0
+-1*a +1*afu  >= 0
+1*v  >= 0
+ ]]
+Guard [[
+-1*v +1*afu  >= 0
+-1*a +1*afu  >= 0
+1*v  >= 0
+1*v -1*afu +1*amax  >= 0
+ ]]
+Update [[
+1*afu -1*`a   = 0 
+1*`v   = 0 
+-1*d +1*`d  >= 0
+ ]]
+Preserved [[
+  afu    amax    d0  ]]
+Transition Relation Ends
+
+Dualizing....
+Transition Relation
+Name: t5
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*d0 -1*`d0   = 0 
+1*amax -1*`amax   = 0 
+1*afu -1*`afu   = 0 
+1*v -1*`v +1*`a   = 0 
+-1*v +1*afu -1*amax  >= 0
+-1*v +1*d +1*amax  >= 0
+-1*d +1*`v +1*`d  >= 0
+1*`v  >= 0
+1*v +1*amax -1*`v  >= 0
+1*v  >= 0
+-1*a +1*afu  >= 0
+1*amax  >= 0
+ ]]
+Guard [[
+-1*v +1*afu -1*amax  >= 0
+1*v  >= 0
+-1*v +1*d +1*amax  >= 0
+-1*a +1*afu  >= 0
+1*amax  >= 0
+ ]]
+Update [[
+1*v -1*`v +1*`a   = 0 
+-1*d +1*`v +1*`d  >= 0
+1*`v  >= 0
+1*v +1*amax -1*`v  >= 0
+ ]]
+Preserved [[
+  afu    amax    d0  ]]
+Transition Relation Ends
+
+Dualizing....
+Transition Relation
+Name: t6
+Pre-Location:l0  Post-Location:l0
+Transition Relation [[
+1*d0 -1*`d0   = 0 
+1*amax -1*`amax   = 0 
+1*afu -1*`afu   = 0 
+1*`v   = 0 
+-1*v -1*`a  >= 0
+-1*v +1*afu -1*amax  >= 0
+-1*v +1*d +1*amax  >= 0
+-1*d +1*`d  >= 0
+1*v  >= 0
+1*amax  >= 0
+-1*a +1*afu  >= 0
+ ]]
+Guard [[
+-1*v +1*afu -1*amax  >= 0
+1*v  >= 0
+-1*v +1*d +1*amax  >= 0
+-1*a +1*afu  >= 0
+1*amax  >= 0
+ ]]
+Update [[
+1*`v   = 0 
+-1*v -1*`a  >= 0
+-1*d +1*`d  >= 0
+1*amax -1*`a  >= 0
+ ]]
+Preserved [[
+  afu    amax    d0  ]]
+Transition Relation Ends
+
+Dualizing....
+Location::l0 pushing back clump with 3 Polyhedra
+done
+l0=>1*afu >=0
+l0=>1*amax >=0
+l0=>0>=0
+l0=>1*d0 -1>=0
+l0=> + 1>=0
+l0=> + 1>=0
+l0=>0>=0
+l0=>1*amax >=0
+l0=>-1*v +1*afu >=0
+l0=>1*d +2*amax >=0
+l0=>1*d +2*afu >=0
+l0=>1*afu >=0
+l0=> + 1>=0
+l0=>0>=0
+l0=>-1*v +1*afu >=0
+l0=>1*amax >=0
+l0=>1*v >=0
+l0=>-1*a +1*afu >=0
+l0=>-1*v -1*a +1*afu +1*amax >=0
+Location:l0
+# of variables6
+ Initial Condition: [[ 
+
+1*d -1*d0   = 0 
+1*a   = 0 
+1*v   = 0 
+1*d -1 >= 0
+1*amax  >= 0
+1*afu  >= 0
+
+]]
+ Invariant: [[ 
+
+-1*v +1*afu  >= 0
+1*d0 -1 >= 0
+1*amax  >= 0
+1*v  >= 0
+1*d +2*amax  >= 0
+1*d +2*afu  >= 0
+-1*v -1*a +1*afu +1*amax  >= 0
+-1*a +1*afu  >= 0
+
+]]
+# of Contexts generated =193
+ # pruned by inclusion tests = 99
+ # of invariants *weav*ed=3
+ #  *bang*ed=0
+ # Pruned in Cump.cc =0
+ Time Taken (0.01S)=27
+
+
+ Doing Initial Propagation
+Propagation done -- Time Taken (0.01S):1
+---- Running Cousot-Halbwachs with H79 widening ----
+ The computed invariant map is 
+ Location:l0
+ [[ 
+-1*v -1*a +1*afu +1*amax  >= 0
+-1*v +1*afu  >= 0
+-1*a +1*afu  >= 0
+1*d0 -1 >= 0
+1*d +2*amax  >= 0
+1*d +2*afu  >= 0
+1*v  >= 0
+
+]]
+
+Time spent propagating stuff: (0.01s) 1
+Time spent widening stuff: (0.01s)0
+
+
+ Time taken for Cousot-Halbwachs Widening (0.01 S)1
+ The bake-off results vs. CH79
+Location :l0  + 
+Checking....
+Done!
+--------------------------------------------------------
+---- Running Cousot-Halbwachs with BHRZ03 widening ----
+ The computed invariant map is 
+ Location:l0
+ [[ 
+1*d0 -1 >= 0
+-1*v -1*a +1*afu +1*amax  >= 0
+-1*v +1*afu  >= 0
+1*d +2*amax  >= 0
+1*v  >= 0
+1*amax  >= 0
+-1*a +1*afu  >= 0
+1*d +2*afu  >= 0
+
+]]
+
+Time spent propagating stuff: (0.01s) 1
+Time spent widening stuff: (0.01s)1
+
+
+ Time taken for BHRZ03 (0.01 S)2
+ The bake-off results vs. BHRZ03
+Location :l0  == 
+Checking....
+Done!
+--------------------------------------------------------
+ Time taken for the initial propagation (0.01 S)1
+ Time taken for the quantifier elimination (0.01 S)27
+ Total Time taken (0.01S) 31

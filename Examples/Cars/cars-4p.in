@@ -1,0 +1,599 @@
+variable [ x1 x2 x3 x4  v1 v2 v3 v4 a1 a2 a3 a4 t br ac r2 r3 r4]
+
+propsteps(1)
+
+location l0
+	x1=100
+	x2=50
+	x3=0
+	x4+50=0
+
+	v1=15
+	v2 = 5
+	v3=10
+	v4=5
+
+	br +1 =0
+	ac -1=0
+
+	a1=0
+	a2=0	
+	a3=0
+	a4=0
+
+	r2=0
+	r3=0
+	r4=0
+	
+	t=0
+
+
+invariant l0:
+	r2 >=0
+	r2 -5 <=0
+	r3 >=0
+	r3 - 5 <=0
+	r4 >=0
+	r4 - 5<=0
+	x4 +50 >=0
+
+#time step is 1 seconds
+# let us assume that things are 
+# normalized to this time step
+
+transition telapse11: l0,
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+	x2 - x3 >=30
+
+        r2=0
+	r3=0
+
+	x3 -x4 >= 30
+	r4=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+	
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2  =0
+	'x3-  x3 -  v3 =0
+	'x4 - x4 - v4 = 0
+
+	'v4-v4-a4=0
+
+	'a4-a4=0
+
+		
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+	't-t-1=0
+
+	preserve[a1,a2,a3,br,ac,r2,r3,r4]
+
+
+transition telapse12: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+
+	x2 - x3 >=0
+	x2-x3 <= 30        
+	
+	x3  - x4 >= 30
+	r4=0
+	r2 =0
+	
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+	
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2 =0
+	'x3-  x3 -  v3 =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+	
+	'x4 - x4 - v4 = 0
+	'v4 -v4 -a4 = 0
+	'a4-a4=0
+		
+	't-t-1=0
+
+	'r3-r3-1=0
+
+	preserve[a1,a2,a3,br,ac,r2,r4]
+
+transition telapse13: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x2 - x3 >= 30
+
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	r3 = 0
+
+	x3 -x4 >= 30
+	r4=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+	
+	'x1 -  x1 - v1 = 0
+	'x2 -  x2 - v2 = 0
+	'x3 -  x3 - v3 = 0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0	
+	
+	't-t-1=0
+	'r2-r2-1=0
+
+	preserve[a1,a2,a3,br,ac,r3,r4]
+
+transition telapse14: l0,
+
+        br+1=0
+	ac -1=0
+	
+	x2 - x3 >= 0
+	x2 - x3 <= 30
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	
+	x3 -x4 >= 30
+	r4=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+	
+	'x1 -  x1 - v1 =0
+	'x2 -  x2 - v2  =0
+	'x3 -  x3 - v3  =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+	't-t-1=0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+
+	'r2-r2-1=0
+	'r3-r3-1=0
+
+	preserve[a1,a2,a3,br,ac,r4]
+
+
+
+transition telapse21: l0,
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+	x2 - x3 >=30
+
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+
+
+        r2=0
+	r3=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2  =0
+	'x3-  x3 -  v3 =0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+	't-t-1=0
+
+	preserve[a1,a2,a3,br,ac,r2,r3]
+
+
+transition telapse22: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+
+	x2 - x3 >=0
+	x2-x3 <= 30        
+
+	r2 =0
+	
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+	
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2 =0
+	'x3-  x3 -  v3 =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+		
+	
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+
+	't-t-1=0
+
+	'r3-r3-1=0
+
+	preserve[a1,a2,a3,br,ac,r2]
+
+transition telapse23: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x2 - x3 >= 30
+
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	r3 = 0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+	
+	'x1 -  x1 - v1 = 0
+	'x2 -  x2 - v2 = 0
+	'x3 -  x3 - v3 = 0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+	
+	
+	't-t-1=0
+	'r2-r2-1=0
+
+	preserve[a1,a2,a3,br,ac,r3]
+
+transition telapse24: l0,
+
+        br+1=0
+	ac -1=0
+	
+	x2 - x3 >= 0
+	x2 - x3 <= 30
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+	
+	'x1 -  x1 - v1 =0
+	'x2 -  x2 - v2  =0
+	'x3 -  x3 - v3  =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+
+	't-t-1=0
+
+	'r2-r2-1=0
+	'r3-r3-1=0
+
+	preserve[a1,a2,a3,br,ac]
+
+
+
+
+
+
+#lead car transitions 
+# it can decide to do anything quirky 
+# like set its acceleration to anywhere between 
+# br and ac
+
+transition tlead: l0,
+	br +1 =0
+	ac -1=0
+
+        x1 -x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >= 0 
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+
+	'a1 - ac <=0
+	'a1 - br >=0
+
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a2,a3,a4,t,br,ac,r2,r3,r4]
+
+
+#car 2 senses the position of x1 and breaks if it is too close
+
+transition t1: l0,
+	br +1 =0
+	ac -1=0
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+	
+	x1 -x2 <= 30
+	
+	'a2 <=0
+	'a2 -a1 <= 0
+	'a2 -br >= 0
+	
+	'r2 =0
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a3,a4,t,br,ac,r3,r4]
+
+#car 2 senses the position of x1 and accelerates if it is too far
+transition t2: l0,
+	   br +1 =0
+	   ac -1=0
+	   
+	   x1 -x2 >=0
+	   x2 - x3 >=0
+	   x3-x4>=0
+	   
+	   v1 >=0
+	   v2 >=0
+	   v3 >=0
+	   v4 >=0
+	   
+	   x1 -x2 >= 50
+	   
+	   'a2 >=0
+	   'a2 -a1 >=0
+	   'a2 -ac <=0
+
+	   
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a3,a4,t,br,ac,r2,r3,r4]
+
+#If in optimal range, car 2 will just coast
+
+transition t5: l0,
+	   br +1 =0
+       	   ac -1=0
+	   
+	   x1 -x2 >=0
+	   x2 - x3 >=0
+	   x3-x4>=0
+
+	   v1 >=0
+	   v2 >=0
+	   v3 >=0
+	   v4 >=0
+
+	   x1 -x2 >= 30
+	   x1 -x2 <= 50
+	   
+	   'a2 =0
+
+	   
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a3,a4,t,br,ac,r2,r3,r4]
+
+#car 3 senses the position of car 2 and does some adjustments to its
+# position
+
+transition t3: l0,
+	br +1 =0
+	ac -1=0
+	
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3-x4>=0
+	
+	v1 >= 0
+	v2 >= 0
+	v3 >= 0
+	v4 >= 0
+	
+
+	x2 - x3 <= 30
+
+	'a3 -a2 <=0
+	'a3 <=0
+	'a3 -br >= 0
+
+	'r3=0
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a4,t,br,ac,r2,r4]
+
+
+transition t4: l0,
+	
+	br +1 =0
+	ac -1=0
+	
+	x1 - x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+	
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+	x2 - x3 >= 50
+	
+	'a3 >=0
+	'a3 -ac <= 0
+	'a3 -a2 >=0
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a4,t,br,ac,r2,r3,r4]
+
+
+transition t6: l0,
+	
+	br +1 =0
+	ac -1=0
+	
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+	x2 -x3 >= 30
+	x2 - x3 <= 50
+	
+	'a3 =0
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a4,t,br,ac,r2,r3,r4]
+
+#For the car 4 in the platoon, 
+#needs to look at car 3 and adjust
+
+transition t7: l0,
+	br +1 =0
+	ac -1=0
+	
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3-x4>=0
+	
+	v1 >= 0
+	v2 >= 0
+	v3 >= 0
+	v4 >= 0
+	
+
+	x3 - x4 <= 30
+	
+	'a4 <= 0
+	'a4 -a3 <= 0
+	'a4 -br >= 0
+
+	'r4=0
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a3,t,br,ac,r2,r3]
+
+
+
+transition t8: l0,
+	
+	br +1 =0
+	ac -1=0
+	
+	x1 - x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+	
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+	x3 - x4 >= 50
+	
+	'a4 >= 0
+	'a4 -a3 >= 0
+	'a4 -ac <= 0
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a3,t,br,ac,r2,r3,r4]
+
+
+transition t9: l0,
+	
+	br +1 =0
+	ac -1=0
+	
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+	x3 -x4 >= 30
+	x3 - x4 <= 50
+	
+	'a4 =0
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a3,t,br,ac,r2,r3,r4]
+
+
+end

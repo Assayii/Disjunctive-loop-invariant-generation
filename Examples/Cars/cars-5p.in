@@ -1,0 +1,1191 @@
+variable [ x1 x2 x3 x4 x5 v1 v2 v3 v4 v5 a1 a2 a3 a4 a5 t br ac r2 r3 r4 r5]
+
+propsteps(1)
+
+location l0
+	x1=100
+	x2=50
+	x3=0
+	x4+50=0
+	x5+100=0
+
+	v1=15
+	v2 = 5
+	v3=10
+	v4=15
+	v5=10
+
+	br +1 =0
+	ac -1=0
+
+	a1=0
+	a2=0	
+	a3=0
+	a4=0
+	a5=0
+
+	r2=0
+	r3=0
+	r4=0
+	r5=0
+	t=0
+
+invariant l0:
+	r2 >=0
+	r2 -5 <=0
+	r3 >=0
+	r3 - 5 <=0
+	r4 >=0
+	r4 - 5<=0
+	r5 >=0
+	r5 -5 <=0
+
+
+#time step is 1 seconds
+# let us assume that things are 
+# normalized to this time step
+
+
+#time step is 1 seconds
+# let us assume that things are 
+# normalized to this time step
+
+transition telapse111: l0,
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+	x2 - x3 >=30
+
+        r2=0
+	r3=0
+
+	x3 -x4 >= 30
+	r4=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2  =0
+	'x3-  x3 -  v3 =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+	
+	
+	r5=0
+	x4-x5 >= 30
+
+	't-t-1=0
+
+	preserve[a1,a2,a3,br,ac,r2,r3,r4,r5]
+
+
+transition telapse121: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+
+	x2 - x3 >=0
+	x2-x3 <= 30        
+	
+	x3 -x4 >= 30
+	r4=0
+
+	r2 =0
+	
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2 =0
+	'x3-  x3 -  v3 =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+
+
+	't-t-1=0
+
+	'r3-r3-1=0
+
+		r5=0
+	x4-x5 >= 30
+
+	preserve[a1,a2,a3,br,ac,r2,r4,r5]
+
+transition telapse131: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x2 - x3 >= 30
+
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	r3 = 0
+
+	x3 -x4 >= 30
+	r4=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1 -  x1 - v1 = 0
+	'x2 -  x2 - v2 = 0
+	'x3 -  x3 - v3 = 0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+
+	
+		r5=0
+	x4-x5 >= 30
+		
+	't-t-1=0
+	'r2-r2-1=0
+
+	preserve[a1,a2,a3,br,ac,r3,r4,r5]
+
+transition telapse141: l0,
+
+        br+1=0
+	ac -1=0
+	
+	x2 - x3 >= 0
+	x2 - x3 <= 30
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	
+	x3 -x4 >= 30
+	r4=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1 -  x1 - v1 =0
+	'x2 -  x2 - v2  =0
+	'x3 -  x3 - v3  =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+
+		
+	't-t-1=0
+
+	'r2-r2-1=0
+	'r3-r3-1=0
+
+	r5=0
+	x4-x5 >= 30
+
+	preserve[a1,a2,a3,br,ac,r4,r5]
+
+
+
+transition telapse211: l0,
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+	x2 - x3 >=30
+
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+
+	r4=0
+        r2=0
+	r3=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2  =0
+	'x3-  x3 -  v3 =0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+	't-t-1=0
+
+	r5=0
+	x4-x5 >= 30
+
+
+	preserve[a1,a2,a3,br,ac,r2,r3,r5]
+
+
+transition telapse221: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+
+	x2 - x3 >=0
+	x2-x3 <= 30        
+
+	r2 =0
+	
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2 =0
+	'x3-  x3 -  v3 =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+		
+	
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+
+	't-t-1=0
+
+	'r3-r3-1=0
+
+	r5=0
+	x4-x5 >= 30
+
+
+	preserve[a1,a2,a3,br,ac,r2,r5]
+
+transition telapse231: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x2 - x3 >= 30
+
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	r3 = 0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1 -  x1 - v1 = 0
+	'x2 -  x2 - v2 = 0
+	'x3 -  x3 - v3 = 0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+	
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+
+	
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+	
+	
+	't-t-1=0
+	'r2-r2-1=0
+
+	r5=0
+	x4-x5 >= 30
+
+	preserve[a1,a2,a3,br,ac,r3,r5]
+
+transition telapse241: l0,
+
+        br+1=0
+	ac -1=0
+	
+	x2 - x3 >= 0
+	x2 - x3 <= 30
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1 -  x1 - v1 =0
+	'x2 -  x2 - v2  =0
+	'x3 -  x3 - v3  =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+	
+
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+
+	't-t-1=0
+
+	'r2-r2-1=0
+	'r3-r3-1=0
+
+	r5=0
+	x4-x5 >= 30
+
+	preserve[a1,a2,a3,br,ac,r5]
+
+
+
+transition telapse112: l0,
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+	x2 - x3 >=30
+
+        r2=0
+	r3=0
+
+	x3 -x4 >= 30
+	r4=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2  =0
+	'x3-  x3 -  v3 =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+
+	't-t-1=0
+
+	x4 -x5 >=0
+	x4 -x5 <=30
+	'r5-r5-1=0
+
+	preserve[a1,a2,a3,br,ac,r2,r3,r4]
+
+
+transition telapse122: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+
+	x2 - x3 >=0
+	x2-x3 <= 30        
+	
+	x3 -x4 >= 30
+	r4=0
+
+	r2 =0
+	
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2 =0
+	'x3-  x3 -  v3 =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+	't-t-1=0
+
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+
+	'r3-r3-1=0
+	x4 -x5 >=0
+	x4 -x5 <=30
+	'r5-r5-1=0
+
+	preserve[a1,a2,a3,br,ac,r2,r4]
+
+transition telapse132: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x2 - x3 >= 30
+
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	r3 = 0
+
+	x3 -x4 >= 30
+	r4=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1 -  x1 - v1 = 0
+	'x2 -  x2 - v2 = 0
+	'x3 -  x3 - v3 = 0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+		
+
+	't-t-1=0
+	'r2-r2-1=0
+	
+		x4 -x5 >=0
+	x4 -x5 <=30
+	'r5-r5-1=0
+
+
+	preserve[a1,a2,a3,br,ac,r3,r4]
+
+transition telapse142: l0,
+
+        br+1=0
+	ac -1=0
+	
+	x2 - x3 >= 0
+	x2 - x3 <= 30
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	
+	x3 -x4 >= 30
+	r4=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1 -  x1 - v1 =0
+	'x2 -  x2 - v2  =0
+	'x3 -  x3 - v3  =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+
+
+	't-t-1=0
+
+	'r2-r2-1=0
+	'r3-r3-1=0
+
+		x4 -x5 >=0
+	x4 -x5 <=30
+	'r5-r5-1=0
+
+	preserve[a1,a2,a3,br,ac,r4]
+
+
+
+transition telapse212: l0,
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+	x2 - x3 >=30
+
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+
+	r4=0
+        r2=0
+	r3=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2  =0
+	'x3-  x3 -  v3 =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+		
+
+	't-t-1=0
+
+		x4 -x5 >=0
+	x4 -x5 <=30
+	'r5-r5-1=0
+
+
+	preserve[a1,a2,a3,br,ac,r2,r3]
+
+
+transition telapse222: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x1 -x2 >=30
+
+	x2 - x3 >=0
+	x2-x3 <= 30        
+
+	r2 =0
+	
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1-  x1 - v1  =0
+	'x2-  x2 -  v2 =0
+	'x3-  x3 -  v3 =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+	
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+
+
+	't-t-1=0
+
+	'r3-r3-1=0
+	
+		x4 -x5 >=0
+	x4 -x5 <=30
+	'r5-r5-1=0
+
+
+	preserve[a1,a2,a3,br,ac,r2]
+
+transition telapse232: l0,
+
+
+        br+1=0
+	ac -1=0
+
+	x2 - x3 >= 30
+
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	r3 = 0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1 -  x1 - v1 = 0
+	'x2 -  x2 - v2 = 0
+	'x3 -  x3 - v3 = 0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+	
+	
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+
+
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+	
+		x4 -x5 >=0
+	x4 -x5 <=30
+	'r5-r5-1=0
+	
+
+	't-t-1=0
+	'r2-r2-1=0
+
+	preserve[a1,a2,a3,br,ac,r3]
+
+transition telapse242: l0,
+
+        br+1=0
+	ac -1=0
+	
+	x2 - x3 >= 0
+	x2 - x3 <= 30
+	x1 - x2 >= 0
+	x1 - x2 <= 30        
+	
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	
+	'x1 -  x1 - v1 =0
+	'x2 -  x2 - v2  =0
+	'x3 -  x3 - v3  =0
+	
+	'v1-v1-a1=0
+	'v2-v2-a2=0
+	'v3-v3-a3=0
+		
+		x4 -x5 >=0
+	x4 -x5 <=30
+	'r5-r5-1=0
+	
+
+	x3 -x4 >= 0
+	x3-x4 <=30
+	'r4-r4-1=0
+	
+	'x4-x4-v4=0
+	'v4-v4-a4=0
+	'a4-a4=0
+	
+	'x5-x5-v5=0
+	'v5-v5-a5=0
+	'a5-a5=0
+
+
+	't-t-1=0
+
+	'r2-r2-1=0
+	'r3-r3-1=0
+
+	preserve[a1,a2,a3,br,ac]
+
+
+
+
+
+
+
+#lead car transitions 
+# it can decide to do anything quirky 
+# like set its acceleration to anywhere between 
+# br and ac
+
+transition tlead: l0,
+	br +1 =0
+	ac -1=0
+
+        x1 -x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >= 0 
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+	
+	x4 -x5 >=0
+	v5 >=0
+
+
+	'a1 - ac <=0
+	'a1 - br >=0
+
+
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a2,a3,a4,t,br,ac,x5,v5,a5,r2,r3,r4,r5]
+
+
+#car 2 senses the position of x1 and breaks if it is too close
+
+transition t1: l0,
+	br +1 =0
+	ac -1=0
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+	
+
+	x4 -x5 >=0
+	v5 >=0
+
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+	
+	x1 -x2 <= 30
+	
+	'a2 <=0
+	'a2 -a1 <=0
+	'a2 -br >= 0
+	
+	'r2=0
+
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a3,a4,t,br,ac,x5,v5,a5,r3,r4,r5]
+
+#car 2 senses the position of x1 and accelerates if it is too far
+transition t2: l0,
+	   br +1 =0
+	   ac -1=0
+	   
+	   x1 -x2 >=0
+	   x2 - x3 >=0
+	   x3-x4>=0
+	   
+	   
+	   x4 -x5 >=0
+	   v5 >=0
+	   
+
+	   v1 >=0
+	   v2 >=0
+	   v3 >=0
+	   
+	   x1 -x2 >= 50
+	   
+	   'a2 >=0
+	   'a2-a1 >=0
+	   'a2 -ac <=0
+
+	   
+
+
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a3,a4,t,br,ac,x5,v5,a5,r2,r3,r4,r5]
+
+#If in optimal range, car 2 will just coast
+
+transition t5: l0,
+	   br +1 =0
+       	   ac -1=0
+	   
+	   x1 -x2 >=0
+	   x2 - x3 >=0
+	   x3-x4>=0
+
+	   
+	  x4 -x5 >=0
+	  v5 >=0
+
+
+	   v1 >=0
+	   v2 >=0
+	   v3 >=0
+	   v4 >=0
+
+	   x1 -x2 >= 30
+	   x1 -x2 <= 50
+	   
+	   'a2 =0
+
+	   
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a3,a4,t,br,ac,x5,v5,a5,r2,r3,r4,r5]
+
+#car 3 senses the position of car 2 and does some adjustments to its
+# position
+
+transition t3: l0,
+	br +1 =0
+	ac -1=0
+	
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3-x4>=0
+	
+	x4-x5>=0	
+	v5 >=0
+
+	v1 >= 0
+	v2 >= 0
+	v3 >= 0
+	v4 >= 0
+	
+
+	x2 - x3 <= 30
+	
+	'a3 <=0
+	'a3-a2 <=0
+	'a3 -br >= 0
+	
+	'r3 =0
+
+	
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a4,t,br,ac,x5,v5,a5,r2,r4,r5]
+
+
+
+transition t4: l0,
+	
+	br +1 =0
+	ac -1=0
+	
+	x1 - x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+	
+	x4-x5>=0
+	v5 >=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+	x2 - x3 >= 50
+	
+	'a3 >=0
+	'a3 -ac <= 0
+	'a3 -a2 >=0
+
+
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a4,t,br,ac,x5,v5,a5,r2,r3,r4,r5]
+
+
+transition t6: l0,
+	
+	br +1 =0
+	ac -1=0
+	
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+	
+	
+	x4 -x5 >=0
+	v5 >=0
+
+
+	x2 -x3 >= 30
+	x2 - x3 <= 50
+	
+	'a3 =0
+	
+
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a4,t,br,ac,x5,v5,a5,r2,r3,r4,r5]
+
+#For the car 4 in the platoon, 
+#needs to look at car 3 and adjust
+
+transition t7: l0,
+	br +1 =0
+	ac -1=0
+	
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3-x4>=0
+	
+	v1 >= 0
+	v2 >= 0
+	v3 >= 0
+	v4 >= 0
+	
+	
+	x4 -x5 >=0
+	v5 >=0
+
+
+	x3 - x4 <= 30
+	
+	'a4 <=0
+	'a4-a3 <=0
+	'a4 -br >= 0
+	
+	'r4=0
+
+
+
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a3,t,br,ac,x5,v5,a5,r2,r3,r5]
+
+
+
+transition t8: l0,
+	
+	br +1 =0
+	ac -1=0
+	
+	x1 - x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+	
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+	
+	x4 -x5 >=0
+	v5 >=0
+
+
+	x3 - x4 >= 50
+	
+	'a4 >=0
+	'a4 -a3 >=0
+	'a4 -ac <= 0
+	
+
+
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a3,t,br,ac,x5,v5,a5,r2,r3,r4,r5]
+
+
+transition t9: l0,
+	
+	br +1 =0
+	ac -1=0
+	
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+	
+	x4 -x5 >=0
+	v5 >=0
+
+	x3 -x4 >= 30
+	x3 - x4 <= 50
+	
+	'a4 =0
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a3,t,br,ac,x5,v5,a5,r2,r3,r4,r5]
+
+#Now car 5 needs to sense and upgrade its position
+
+
+transition t10: l0,
+	br +1 =0
+	ac -1=0
+	
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3-x4>=0
+	
+	v1 >= 0
+	v2 >= 0
+	v3 >= 0
+	v4 >= 0
+	
+	
+	x4 -x5 >=0
+	v5 >=0
+
+
+	x4 - x5 <= 30
+	
+	'a5 <=0
+	'a5-a4 <=0
+	'a5 -br >= 0
+	
+	'r5=0
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a3,a4,t,br,ac,x5,v5,r2,r3,r4]
+
+
+
+transition t11: l0,
+	
+	br +1 =0
+	ac -1=0
+	
+	x1 - x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+	
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+	
+	x4 -x5 >=0
+	v5 >=0
+
+
+	x4 - x5 >= 50
+	
+	'a5 >=0
+	'a5-a4>=0
+	'a5 -ac <= 0
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a3,a4,t,br,ac,x5,v5,r2,r3,r4,r5]
+
+
+transition t12: l0,
+	
+	br +1 =0
+	ac -1=0
+	
+	x1 -x2 >=0
+	x2 - x3 >=0
+	x3 - x4 >=0
+
+	v1 >=0
+	v2 >=0
+	v3 >=0
+	v4 >=0
+
+	
+	x4 -x5 >=0
+	v5 >=0
+
+	x4 -x5 >= 3
+	x4 - x5 <= 5
+	
+	'a5 =0
+	
+	preserve[x1,x2,x3,x4,v1,v2,v3,v4,a1,a2,a3,a4,t,br,ac,x5,v5,r2,r3,r4,r5]
+	   
+	  
+
+end

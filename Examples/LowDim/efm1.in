@@ -1,0 +1,63 @@
+variable [ X1 X2 X3 X4 X5 X6 ]
+
+location l0
+X1>=1 
+ X2=0 
+ X3=0 
+X4=1 
+X5=0 
+X6=0
+
+invariant l0:
+X1 >= 0
+1*X4 +1*X5 +1*X6 -1  = 0 
+0-1*X4 -1*X5  + 1 >= 0
+1*X5  >= 0
+1*X4  >= 0
+1*X3  >= 0
+1*X2  >= 0
+1*X1 +1*X5 -1 >= 0
+1*X1 +1*X2 -1*X4 -1*X5  >= 0
+1*X1 +1*X2 +1*X3 -1 >= 0
+
+
+transition t1:l0,
+	X1 >= 1
+	X4 >= 1
+	'X1=X1-1
+	'X4=X4-1
+	'X2=X2+1
+	'X5=X5+1
+	preserve[X3, X6]
+
+transition t2:l0,
+	X2 >=1
+	X6 >= 1
+	'X2=X2 -1
+	'X3=X3 +1
+	preserve[X1, X4,X5,X6]
+
+transition t3:l0,
+	X4 >= 1
+	X3 >= 1
+	'X3=X3-1
+	 'X2=X2+1
+	preserve[X1,X4,X5,X6]
+
+transition t4:l0,
+	X3>=1
+	'X3=X3-1
+	'X1=X1+1
+	'X6=X6+X5
+	'X5=0
+	preserve[X2,X4]
+
+transition t5:l0,
+	X2 >= 1
+	'X2 = X2 -1
+	'X1 = X1 +1
+	'X4 = X4 + X6
+	'X6=0
+	preserve[X3,X5]
+
+end	

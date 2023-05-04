@@ -1,0 +1,33 @@
+variable [x y t]
+
+#Example taken originally from Henzinger Ho 1993?
+# See CAV 2003 paper for details
+
+Location l0 
+	x = 0
+	y = 0
+	t = 0
+
+Location l1
+
+
+transition t1: l0,l1,
+
+		 1 <= 't - t
+		 	  't - t <= 2
+	't - t <= 'y - y
+			  'y - y <= 2*'t - 2*t
+	't - t <= 'x - x
+			  'x - x <= 2*'t - 2*t
+
+transition t2: l1,l0,
+	
+			 1 <= 't - t
+				  't - t <= 2
+	2*t - 2*'t <= 'y - y
+				  'y - y <= t - 't
+		't - t <= 'x - x
+				  'x - x <= 2*'t - 2*t
+
+end
+
