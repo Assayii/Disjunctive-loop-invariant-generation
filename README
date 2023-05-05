@@ -14,4 +14,4 @@ a script to run the examples with invariance checking.
  
 5. This is based on the StInG(Stanford Invariant Generation) project.
 
-
+6. To run the project, use "./lsting <MyExammples/mod_1.in >MyExamples/mod_1.out"
