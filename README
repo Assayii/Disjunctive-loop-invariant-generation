@@ -6,14 +6,12 @@ library in the makefile.
 compiles to a binary called lsting.  Look at Examples/LowDim/doit for 
 a script to run the examples with invariance checking.
 
-2. Please edit Makefile.globals setting appropriate paths
+3. The MyExamples directory contains some simple examples with modulus.
+
+4. Please edit Makefile.globals setting appropriate paths
  to the PPL and the GMP includes/libraries.
  Please set the path for bison version 1.875.
+ 
+5. This is based on the StInG(Stanford Invariant Generation) project.
 
-3. Maintenance queries can be sent to me at srirams@nec-labs.com
-or at srirams@theory.stanford.edu
 
----
-Sriram Sankaranarayanan
-Erstwhile PhD student
-Stanford University, CA
